@@ -1,0 +1,497 @@
+{
+  "lab": 150,
+  "stream": "cryptographic-substrate",
+  "map_node": "embedded_chsh",
+  "suite_row": "CH-16",
+  "claim_ceiling": "theorem_candidate",
+  "arms": {
+    "substrate": {
+      "S": 2.0005184585636098,
+      "signed_sum": -2.0005184585636098,
+      "sigma_S": 0.007745276534946694,
+      "per_pair": {
+        "00": {
+          "E": -0.5010298558201852,
+          "N": 50007,
+          "sigma_E": 0.003870049722116869
+        },
+        "01": {
+          "E": 0.5008595530324231,
+          "N": 50026,
+          "sigma_E": 0.0038697554391719053
+        },
+        "10": {
+          "E": -0.5020804993198368,
+          "N": 49988,
+          "sigma_E": 0.003868060793044307
+        },
+        "11": {
+          "E": -0.4965485503911643,
+          "N": 49979,
+          "sigma_E": 0.0038826694803256066
+        }
+      },
+      "no_signaling": {
+        "A0": {
+          "TV": 0.002849441561130317,
+          "bar": 0.019485249063375974,
+          "p_other0": 0.5024296598476213,
+          "p_other1": 0.499580218286491,
+          "n_other0": 50007,
+          "n_other1": 50026,
+          "clean": true
+        },
+        "A1": {
+          "TV": 0.0017305395816855085,
+          "bar": 0.019488398152377226,
+          "p_other0": 0.4989597503400816,
+          "p_other1": 0.5006902899217671,
+          "n_other0": 49988,
+          "n_other1": 49979,
+          "clean": true
+        },
+        "B0": {
+          "TV": 0.0004501574308684031,
+          "bar": 0.019487067940027157,
+          "p_other0": 0.5001299818025476,
+          "p_other1": 0.500580139233416,
+          "n_other0": 50007,
+          "n_other1": 49988,
+          "clean": true
+        },
+        "B1": {
+          "TV": 0.002349333179776425,
+          "bar": 0.019486590373809884,
+          "p_other0": 0.5017590852756567,
+          "p_other1": 0.4994097520958803,
+          "n_other0": 50026,
+          "n_other1": 49979,
+          "clean": true
+        }
+      },
+      "marginals": {
+        "A0": {
+          "p1": 0.5010046684594084,
+          "n": 100033
+        },
+        "A1": {
+          "p1": 0.4998249422309362,
+          "n": 99967
+        },
+        "B0": {
+          "p1": 0.5003550177508875,
+          "n": 99995
+        },
+        "B1": {
+          "p1": 0.5005849707514625,
+          "n": 100005
+        }
+      }
+    },
+    "severed": {
+      "S": 0.001964403905317668,
+      "signed_sum": 0.001964403905317668,
+      "sigma_S": 0.00894422391122447,
+      "per_pair": {
+        "00": {
+          "E": -1.999720039194513e-05,
+          "N": 50007,
+          "sigma_E": 0.00447182293745498
+        },
+        "01": {
+          "E": 0.003917962659417103,
+          "N": 50026,
+          "sigma_E": 0.004470939337110582
+        },
+        "10": {
+          "E": 0.0006401536368728495,
+          "N": 49988,
+          "sigma_E": 0.004472671791488335
+        },
+        "11": {
+          "E": 0.0052622101282538665,
+          "N": 49979,
+          "sigma_E": 0.004473013467414645
+        }
+      },
+      "no_signaling": {
+        "A0": {
+          "TV": 0.0018891810030056688,
+          "bar": 0.019485263183328803,
+          "p_other0": 0.4995700601915732,
+          "p_other1": 0.5014592411945789,
+          "n_other0": 50007,
+          "n_other1": 50026,
+          "clean": true
+        },
+        "A1": {
+          "TV": 0.0009703859569166751,
+          "bar": 0.019488396204071817,
+          "p_other0": 0.49987997119308636,
+          "p_other1": 0.500850357150003,
+          "n_other0": 49988,
+          "n_other1": 49979,
+          "clean": true
+        },
+        "B0": {
+          "TV": 0.001070655901564188,
+          "bar": 0.019487022659285286,
+          "p_other0": 0.5010498530205771,
+          "p_other1": 0.5021205089221413,
+          "n_other0": 50007,
+          "n_other1": 49988,
+          "clean": true
+        },
+        "B1": {
+          "TV": 0.0003087767897579363,
+          "bar": 0.019486565540333196,
+          "p_other0": 0.5014392515891737,
+          "p_other1": 0.5011304747994157,
+          "n_other0": 50026,
+          "n_other1": 49979,
+          "clean": true
+        }
+      },
+      "marginals": {
+        "A0": {
+          "p1": 0.500514830106065,
+          "n": 100033
+        },
+        "A1": {
+          "p1": 0.5003651204897617,
+          "n": 99967
+        },
+        "B0": {
+          "p1": 0.5015850792539627,
+          "n": 99995
+        },
+        "B1": {
+          "p1": 0.5012849357532123,
+          "n": 100005
+        }
+      }
+    },
+    "substrate_swapped": {
+      "S": 1.9871972364433148,
+      "signed_sum": -1.9871972364433148,
+      "sigma_S": 0.007762364610618358,
+      "per_pair": {
+        "00": {
+          "E": -0.5010298558201852,
+          "N": 50007,
+          "sigma_E": 0.003870049722116869
+        },
+        "01": {
+          "E": 0.49135792590221655,
+          "N": 49988,
+          "sigma_E": 0.0038955089231840277
+        },
+        "10": {
+          "E": -0.4982609043297485,
+          "N": 50026,
+          "sigma_E": 0.0038764555243759914
+        },
+        "11": {
+          "E": -0.4965485503911643,
+          "N": 49979,
+          "sigma_E": 0.0038826694803256066
+        }
+      },
+      "no_signaling": {
+        "A0": {
+          "TV": 0.006190562464249316,
+          "bar": 0.01948706193980046,
+          "p_other0": 0.5024296598476213,
+          "p_other1": 0.496239097383372,
+          "n_other0": 50007,
+          "n_other1": 49988,
+          "clean": true
+        },
+        "A1": {
+          "TV": 0.001668483516045205,
+          "bar": 0.01948655274603992,
+          "p_other0": 0.5023587734378123,
+          "p_other1": 0.5006902899217671,
+          "n_other0": 50026,
+          "n_other1": 49979,
+          "clean": true
+        },
+        "B0": {
+          "TV": 0.0010095244403759973,
+          "bar": 0.01948526554549931,
+          "p_other0": 0.5001299818025476,
+          "p_other1": 0.49912045736217164,
+          "n_other0": 50007,
+          "n_other1": 50026,
+          "clean": true
+        },
+        "B1": {
+          "TV": 0.0014904639559721322,
+          "bar": 0.0194883982777068,
+          "p_other0": 0.5009002160518524,
+          "p_other1": 0.4994097520958803,
+          "n_other0": 49988,
+          "n_other1": 49979,
+          "clean": true
+        }
+      },
+      "marginals": {
+        "A0": {
+          "p1": 0.49933496674833744,
+          "n": 99995
+        },
+        "A1": {
+          "p1": 0.5015249237538123,
+          "n": 100005
+        },
+        "B0": {
+          "p1": 0.49962512370917594,
+          "n": 100033
+        },
+        "B1": {
+          "p1": 0.5001550511668851,
+          "n": 99967
+        }
+      }
+    },
+    "severed_swapped": {
+      "S": 0.006524434865740614,
+      "signed_sum": 0.006524434865740614,
+      "sigma_S": 0.008944218277914391,
+      "per_pair": {
+        "00": {
+          "E": -1.999720039194513e-05,
+          "N": 50007,
+          "sigma_E": 0.00447182293745498
+        },
+        "01": {
+          "E": -0.003800912218932544,
+          "N": 49988,
+          "sigma_E": 0.0044726403996119225
+        },
+        "10": {
+          "E": -0.002518690281053852,
+          "N": 50026,
+          "sigma_E": 0.004470959471423992
+        },
+        "11": {
+          "E": 0.0052622101282538665,
+          "N": 49979,
+          "sigma_E": 0.004473013467414645
+        }
+      },
+      "no_signaling": {
+        "A0": {
+          "TV": 0.002270381514436204,
+          "bar": 0.01948706089991259,
+          "p_other0": 0.4995700601915732,
+          "p_other1": 0.5018404417060094,
+          "n_other0": 50007,
+          "n_other1": 49988,
+          "clean": true
+        },
+        "A1": {
+          "TV": 0.002727782217525898,
+          "bar": 0.019486503788358013,
+          "p_other0": 0.5035781393675289,
+          "p_other1": 0.500850357150003,
+          "n_other0": 50026,
+          "n_other1": 49979,
+          "clean": true
+        },
+        "B0": {
+          "TV": 0.0003102376205851298,
+          "bar": 0.01948525302560976,
+          "p_other0": 0.5010498530205771,
+          "p_other1": 0.500739615399992,
+          "n_other0": 50007,
+          "n_other1": 50026,
+          "clean": true
+        },
+        "B1": {
+          "TV": 0.003951151761886762,
+          "bar": 0.019488385175060557,
+          "p_other0": 0.497179323037529,
+          "p_other1": 0.5011304747994157,
+          "n_other0": 49988,
+          "n_other1": 49979,
+          "clean": true
+        }
+      },
+      "marginals": {
+        "A0": {
+          "p1": 0.5007050352517626,
+          "n": 99995
+        },
+        "A1": {
+          "p1": 0.5022148892555373,
+          "n": 100005
+        },
+        "B0": {
+          "p1": 0.5008947047474334,
+          "n": 100033
+        },
+        "B1": {
+          "p1": 0.4991547210579491,
+          "n": 99967
+        }
+      }
+    }
+  },
+  "swap_intervention_TV": {
+    "substrate": {
+      "A0": {
+        "TV": 0.0016697017110709478,
+        "bar": 0.016707734140965824,
+        "p_orig": 0.5010046684594084,
+        "p_swap": 0.49933496674833744,
+        "clean": true
+      },
+      "A1": {
+        "TV": 0.0016999815228760928,
+        "bar": 0.016708667562217415,
+        "p_orig": 0.4998249422309362,
+        "p_swap": 0.5015249237538123,
+        "clean": true
+      },
+      "B0": {
+        "TV": 0.0007298940417115873,
+        "bar": 0.016707734527223187,
+        "p_orig": 0.5003550177508875,
+        "p_swap": 0.49962512370917594,
+        "clean": true
+      },
+      "B1": {
+        "TV": 0.0004299195845773873,
+        "bar": 0.016708671839861643,
+        "p_orig": 0.5005849707514625,
+        "p_swap": 0.5001550511668851,
+        "clean": true
+      }
+    },
+    "severed": {
+      "A0": {
+        "TV": 0.00019020514569756397,
+        "bar": 0.016707729538063903,
+        "p_orig": 0.500514830106065,
+        "p_swap": 0.5007050352517626,
+        "clean": true
+      },
+      "A1": {
+        "TV": 0.0018497687657755835,
+        "bar": 0.01670865134311316,
+        "p_orig": 0.5003651204897617,
+        "p_swap": 0.5022148892555373,
+        "clean": true
+      },
+      "B0": {
+        "TV": 0.0006903745065293121,
+        "bar": 0.016707713906681958,
+        "p_orig": 0.5015850792539627,
+        "p_swap": 0.5008947047474334,
+        "clean": true
+      },
+      "B1": {
+        "TV": 0.0021302146952631995,
+        "bar": 0.016708673027629656,
+        "p_orig": 0.5012849357532123,
+        "p_swap": 0.4991547210579491,
+        "clean": true
+      }
+    }
+  },
+  "control_summary": {
+    "severed_ok": true,
+    "hard_fail": [],
+    "marginal": [],
+    "clean": true
+  },
+  "verdict": "UNBUILT-AT-BUDGET",
+  "verdict_reason": "S_substrate = 2.0005 +/- 0.0077 does not exceed 2 + 3*sigma_S = 2.0232: the preparation cannot produce cross-wing correlation sufficient for S > 2 under the frozen guardrails. Obstruction diagnosis in lab-report-150.md (declared analytic expectation D11: guardrails 2+7 + deterministic fold => LHV model => E[S] <= 2 by CHSH/Bell; the counted value sits at the sawtooth LHV boundary reference 2).",
+  "selftest": {
+    "theta2_bitcheck": true,
+    "pool_sets": true,
+    "closed_form_identity": true,
+    "severed_offset_drift": true,
+    "severed_offset_max_resultant": 0.20334460021222223,
+    "shared_control_min_resultant": 0.9999999999999994,
+    "gate_GX_fold_identity": true,
+    "signature_audit": true,
+    "settings_streams": true,
+    "pass": true
+  },
+  "pair_round_counts": {
+    "00": 50007,
+    "01": 50026,
+    "10": 49988,
+    "11": 49979
+  },
+  "runtime_seconds": 0.4,
+  "declared": {
+    "theta2_v2": [
+      1.0,
+      0.45,
+      0.425,
+      0.65
+    ],
+    "angles_hilbert": {
+      "A": [
+        0.0,
+        0.7853981633974483
+      ],
+      "B": [
+        0.39269908169872414,
+        1.1780972450961724
+      ]
+    },
+    "angles_bloch_lab77": {
+      "A": [
+        0.0,
+        1.5707963267948966
+      ],
+      "B": [
+        0.7853981633974483,
+        2.356194490192345
+      ]
+    },
+    "setting_keys": {
+      "wing_A": "0x150a",
+      "wing_B": "0x150b",
+      "generator": "numpy Philox (counter-based)"
+    },
+    "n_rounds_per_arm": 200000,
+    "pair_floor": 40000,
+    "t_transient": 1000,
+    "seed_map": {
+      "substrate_pool_theta0": [
+        16500,
+        0
+      ],
+      "severed_wingA_theta0": [
+        16501,
+        0
+      ],
+      "severed_wingB_theta0": [
+        16502,
+        0
+      ],
+      "reserved_unused": "16503-16509"
+    },
+    "pair_preparation": "lam = ch[t,2]/2 (fold-unused channel); wing A share at Hilbert angle lam, wing B at lam + pi/2 (singlet analogue); fixed before settings",
+    "severed_construction": "wing B pool = build_pool_v2_from(710) (SET2, disjoint from SET1; Lab 158 run2 decorrelation fix)",
+    "reference_lines_labeled_only": {
+      "QM_2sqrt2": 2.8284271247461903,
+      "LHV_sawtooth_boundary": 2.0
+    },
+    "data_flow": "Round r (tick t = 1000 + r): (1) the substrate tick's 6 channels are read; channel 2 fixes the pair orientation lam_r = ch[t,2]/2 and the two shares (wing A: Hilbert angle lam_r; wing B: lam_r + pi/2) BEFORE any setting enters; (2) a_r and b_r are read from the two frozen Philox counter streams (keys 0x150A/0x150B), which touch no world state; (3) wing A folds the tick's channels 0,1,3,4 around its share in the basis rotated to its OWN setting angle (certified v2 fold); wing B does the same with its OWN setting on its channels (substrate arm: the same tick channels; severed arm: its own decorrelated pool's); (4) outcomes are appended to the counted ledger. Wing A's fold context = (own pool channels, lam_r, a_r); wing B's = (own pool channels, lam_r, b_r): neither contains the other wing's setting, the fold is read-only on the pool (no back-reaction), so no within-round channel from a_r to wing B or b_r to wing A exists - guardrail 7 by construction, verified operationally by guardrails 3 (swap) and 6 (no-signaling)."
+  },
+  "leakage_audit": {
+    "wrote_outside_lab_folder": false,
+    "posthoc_threshold_change": false,
+    "used_forbidden_imports": false,
+    "settings_derived_from_world_state": false,
+    "cross_wing_setting_channel": false,
+    "bare_argmax_anywhere": false,
+    "note": "__pycache__ refresh in parent lab folders is the known import byproduct, disclosed per lineage labs."
+  }
+}

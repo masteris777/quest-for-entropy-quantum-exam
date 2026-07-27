@@ -1,0 +1,295 @@
+{
+  "lab": "149b",
+  "stream": "cryptographic-substrate",
+  "map_node": "order_sensitive_conformance",
+  "kind": "scout",
+  "stages": {
+    "B_op": {
+      "D_op_by_m": {
+        "0": 0.69695,
+        "0.25": 0.6313,
+        "0.5": 0.44675,
+        "0.75": 0.22204999999999997,
+        "1.0": 9.999999999998899e-05
+      },
+      "V2D2_by_m": {
+        "0": 0.9641983246073531,
+        "0.25": 0.8546699913603581,
+        "0.5": 0.6497188570911827,
+        "0.75": 0.4979997476361918,
+        "1.0": 0.454859219155041
+      },
+      "max_V2D2": 0.9641983246073531,
+      "max_abs_dev_vs_ref": 0.01015678118654706,
+      "monotone": true,
+      "kill_triggered": false
+    }
+  },
+  "verdict": "PASS",
+  "verdict_reason": "All three bars hold: max |D_op - D_ref| = 0.01016 <= 5J = 0.05108; max V^2+D_op^2 = 0.9642 <= 1+3J = 1.0307; D_op monotone falling (0.6969 -> 0.0001). The operational recount lands on run 1's frozen reference curve.",
+  "declared": {
+    "design": "operational D recount per feedback-2.md (ledger #36 rule; Lab 155 calibration pattern): single-branch ensembles (uA-only unkicked, uB-only kicked, identical R(pi/2 Bloch) coupling) with the same mixedness-m marker preparation, through run 1's frozen discrimination-basis v2 fold; D_op = |P(guess R|B) - P(guess R|A)| counted; V imported unchanged from metrics_149.json",
+    "machinery": "recoil_analogue_149 imported unmodified by module import (controlled_kick_ledgered, to_disc_basis, m0_from_draws, freeze_discrimination_basis, certified_marker_fold via 154); only the pool seed roots are this lab's block",
+    "theta2_v2_frozen": [
+      1.0,
+      0.45,
+      0.425,
+      0.65
+    ],
+    "single_branch_states": "z = uA (A-only, coupling never engages -> marker unkicked) / z = uB (B-only, full R(pi/2) kick), deterministic",
+    "phi_cal": 0.0,
+    "phi_independence": "flight phase is global on single-branch fold inputs; cancels in (n0, n1, rho_10)",
+    "V_import": "metrics_149.json stages.A.V_by_m, unchanged; asserted vs header literals < 1e-12",
+    "D_ref_import": "metrics_149.json stages.B.D_ref_by_m (run 1 frozen quadrature); asserted vs header literals < 1e-12 and feedback 4dp table",
+    "predicted_tables": {
+      "P_R_A_pred": {
+        "0": 0.146447,
+        "0.25": 0.18169,
+        "0.5": 0.274921,
+        "0.75": 0.393897,
+        "1.0": 0.5
+      },
+      "P_R_B_pred": {
+        "0": 0.853553,
+        "0.25": 0.81831,
+        "0.5": 0.725079,
+        "0.75": 0.606103,
+        "1.0": 0.5
+      },
+      "D_op_pred": {
+        "0": 0.707107,
+        "0.25": 0.63662,
+        "0.5": 0.450158,
+        "0.75": 0.212207,
+        "1.0": 0.0
+      },
+      "note": "analytic: P = 1/2 -+ (sqrt2/4) sinc(m*pi); pred D_op == D_ref identically (header)"
+    },
+    "J_lineage": 0.01021674439610848,
+    "bars": {
+      "r1_dev_5J": 0.051083721980542396,
+      "r2_englert_1p3J": 1.0306502331883254,
+      "r3_monotone": "no consecutive D_op rise > +3*sigma_Dpair"
+    },
+    "m_grid": [
+      "0",
+      "0.25",
+      "0.5",
+      "0.75",
+      "1.0"
+    ],
+    "N_cell": 20000,
+    "seed_block": [
+      15500,
+      15501,
+      15502,
+      15503,
+      15504,
+      15505,
+      15506,
+      15507
+    ],
+    "seed_usage": {
+      "fold_pool": "[15505, b, mi, 0] (b: 0=A, 1=B)",
+      "prep_pool": "[15506, b, mi, 0]",
+      "unused_reserved": [
+        15500,
+        15501,
+        15502,
+        15503,
+        15504,
+        15507
+      ]
+    },
+    "noise_conventions": {
+      "sigma_cell": 0.007071067811865475,
+      "sigma_Dop": 0.01,
+      "sigma_Dpair": 0.014142135623730952
+    },
+    "stage0": {
+      "theta2_identity": true,
+      "pool_provenance": true,
+      "imported_V_match": true,
+      "imported_D_ref_match": true,
+      "feedback_4dp_match": true,
+      "basis_recomputed_vs_declared_dev": 0.0,
+      "basis_vs_header_literals_dev": 0.0,
+      "predicted_table_quadrature_ok": true
+    }
+  },
+  "detail": {
+    "P_guess_R_A_by_m": {
+      "0": 0.15175,
+      "0.25": 0.1821,
+      "0.5": 0.27825,
+      "0.75": 0.38625,
+      "1.0": 0.50405
+    },
+    "P_guess_R_B_by_m": {
+      "0": 0.8487,
+      "0.25": 0.8134,
+      "0.5": 0.725,
+      "0.75": 0.6083,
+      "1.0": 0.50395
+    },
+    "D_ref_by_m": {
+      "0": 0.707106781186547,
+      "0.25": 0.6366197733897243,
+      "0.5": 0.4501581609696095,
+      "0.75": 0.21220659385562213,
+      "1.0": 2.220446049250313e-16
+    },
+    "V_by_m_imported": {
+      "0": 0.6917073240232122,
+      "0.25": 0.6753741935848291,
+      "0.5": 0.670919737816069,
+      "0.75": 0.6698459114872553,
+      "1.0": 0.6744325089696085
+    },
+    "dev_by_m": {
+      "0": 0.01015678118654706,
+      "0.25": 0.005319773389724336,
+      "0.5": 0.003408160969609497,
+      "0.75": 0.009843406144377842,
+      "1.0": 9.999999999976694e-05
+    },
+    "pred_quadrature": {
+      "0": {
+        "P_R_A": 0.1464466094067263,
+        "P_R_B": 0.8535533905932741,
+        "D_op": 0.7071067811865478
+      },
+      "0.25": {
+        "P_R_A": 0.181690113305138,
+        "P_R_B": 0.8183098866948622,
+        "D_op": 0.6366197733897241
+      },
+      "0.5": {
+        "P_R_A": 0.27492091951519537,
+        "P_R_B": 0.7250790804848047,
+        "D_op": 0.45015816096960937
+      },
+      "0.75": {
+        "P_R_A": 0.39389670307218905,
+        "P_R_B": 0.6061032969278112,
+        "D_op": 0.21220659385562213
+      },
+      "1.0": {
+        "P_R_A": 0.5,
+        "P_R_B": 0.5000000000000001,
+        "D_op": 1.1102230246251565e-16
+      }
+    },
+    "dev_from_pred": {
+      "0": -0.010156781186547836,
+      "0.25": -0.005319773389724114,
+      "0.5": -0.003408160969609386,
+      "0.75": 0.009843406144377842,
+      "1.0": 9.999999999987796e-05
+    },
+    "consecutive_diffs": [
+      -0.06564999999999999,
+      -0.18455,
+      -0.2247,
+      -0.22194999999999998
+    ],
+    "mono_violations_at": [],
+    "r1_ok_by_m": {
+      "0": true,
+      "0.25": true,
+      "0.5": true,
+      "0.75": true,
+      "1.0": true
+    },
+    "r2_ok_by_m": {
+      "0": true,
+      "0.25": true,
+      "0.5": true,
+      "0.75": true,
+      "1.0": true
+    },
+    "cal_A": {
+      "0": {
+        "P_guess_R": 0.15175,
+        "n_guess_R": 3035,
+        "n": 20000,
+        "median_margin": 0.5436244384325921,
+        "keep_min": 0.38268343236508984
+      },
+      "0.25": {
+        "P_guess_R": 0.1821,
+        "n_guess_R": 3642,
+        "n": 20000,
+        "median_margin": 0.5399909309126392,
+        "keep_min": 0.07084741598448077
+      },
+      "0.5": {
+        "P_guess_R": 0.27825,
+        "n_guess_R": 5565,
+        "n": 20000,
+        "median_margin": 0.5114744038548825,
+        "keep_min": 0.12122331452125085
+      },
+      "0.75": {
+        "P_guess_R": 0.38625,
+        "n_guess_R": 7725,
+        "n": 20000,
+        "median_margin": 0.5055668393641973,
+        "keep_min": 0.11058753225465742
+      },
+      "1.0": {
+        "P_guess_R": 0.50405,
+        "n_guess_R": 10081,
+        "n": 20000,
+        "median_margin": 0.5129906455352258,
+        "keep_min": 0.14059348470663038
+      }
+    },
+    "cal_B": {
+      "0": {
+        "P_guess_R": 0.8487,
+        "n_guess_R": 16974,
+        "n": 20000,
+        "median_margin": 0.5410206821378633,
+        "keep_min": 0.3826834323650897
+      },
+      "0.25": {
+        "P_guess_R": 0.8134,
+        "n_guess_R": 16268,
+        "n": 20000,
+        "median_margin": 0.5378741599519307,
+        "keep_min": 0.11642313119711636
+      },
+      "0.5": {
+        "P_guess_R": 0.725,
+        "n_guess_R": 14500,
+        "n": 20000,
+        "median_margin": 0.5222582065021452,
+        "keep_min": 0.11228809327251897
+      },
+      "0.75": {
+        "P_guess_R": 0.6083,
+        "n_guess_R": 12166,
+        "n": 20000,
+        "median_margin": 0.5057697160393081,
+        "keep_min": 0.09963225166475313
+      },
+      "1.0": {
+        "P_guess_R": 0.50395,
+        "n_guess_R": 10079,
+        "n": 20000,
+        "median_margin": 0.514439014218868,
+        "keep_min": 0.05177128503447425
+      }
+    },
+    "ledger_sanity_report_only": {
+      "n_runs": 200000,
+      "n_nonzero": 0
+    }
+  },
+  "leakage_audit": {
+    "wrote_outside_lab_folder": false,
+    "posthoc_threshold_change": false,
+    "used_forbidden_imports": false
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "lab": 119,
+  "stream": "cryptographic-substrate",
+  "kind": "proof",
+  "serves_obligation": "PO-93-0",
+  "stageA": {
+    "L1": {
+      "pass": true,
+      "detail": {
+        "5": {
+          "N": 5,
+          "times": [
+            0,
+            1,
+            2
+          ],
+          "n_atoms": 5,
+          "joint": {
+            "(1, 1, -1)": "1/5",
+            "(1, -1, -1)": "1/5",
+            "(-1, -1, -1)": "1/5",
+            "(-1, -1, 1)": "1/5",
+            "(-1, 1, 1)": "1/5"
+          },
+          "total_probability": "1",
+          "normalization_ok": true,
+          "marginals_joint": [
+            "2/5",
+            "2/5",
+            "2/5"
+          ],
+          "marginals_direct": [
+            "2/5",
+            "2/5",
+            "2/5"
+          ],
+          "marginal_consistency_ok": true,
+          "pass": true
+        },
+        "8": {
+          "N": 8,
+          "times": [
+            0,
+            1,
+            2
+          ],
+          "n_atoms": 6,
+          "joint": {
+            "(1, 1, 1)": "1/4",
+            "(1, 1, -1)": "1/8",
+            "(1, -1, -1)": "1/8",
+            "(-1, -1, -1)": "1/4",
+            "(-1, -1, 1)": "1/8",
+            "(-1, 1, 1)": "1/8"
+          },
+          "total_probability": "1",
+          "normalization_ok": true,
+          "marginals_joint": [
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "marginals_direct": [
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "marginal_consistency_ok": true,
+          "pass": true
+        },
+        "12": {
+          "N": 12,
+          "times": [
+            0,
+            1,
+            2
+          ],
+          "n_atoms": 6,
+          "joint": {
+            "(1, 1, 1)": "1/3",
+            "(1, 1, -1)": "1/12",
+            "(1, -1, -1)": "1/12",
+            "(-1, -1, -1)": "1/3",
+            "(-1, -1, 1)": "1/12",
+            "(-1, 1, 1)": "1/12"
+          },
+          "total_probability": "1",
+          "normalization_ok": true,
+          "marginals_joint": [
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "marginals_direct": [
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "marginal_consistency_ok": true,
+          "pass": true
+        }
+      }
+    },
+    "L2": {
+      "cases": [
+        {
+          "q1": 1,
+          "q2": 1,
+          "q3": 1,
+          "value": 1
+        },
+        {
+          "q1": 1,
+          "q2": 1,
+          "q3": -1,
+          "value": 1
+        },
+        {
+          "q1": 1,
+          "q2": -1,
+          "q3": 1,
+          "value": -3
+        },
+        {
+          "q1": 1,
+          "q2": -1,
+          "q3": -1,
+          "value": 1
+        },
+        {
+          "q1": -1,
+          "q2": 1,
+          "q3": 1,
+          "value": 1
+        },
+        {
+          "q1": -1,
+          "q2": 1,
+          "q3": -1,
+          "value": -3
+        },
+        {
+          "q1": -1,
+          "q2": -1,
+          "q3": 1,
+          "value": 1
+        },
+        {
+          "q1": -1,
+          "q2": -1,
+          "q3": -1,
+          "value": 1
+        }
+      ],
+      "max_value": 1,
+      "pointwise_bound_1": true,
+      "pass": true
+    },
+    "L3": {
+      "atoms_p": [
+        "p0",
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7"
+      ],
+      "K3_symbolic": "p0 + p1 - 3*p2 + p3 + p4 - 3*p5 + p6 + p7",
+      "identity_checked": "sum(p_i) - K3 == sum(p_i*(1-value_i))  (unconditional algebraic identity)",
+      "identity_diff": "0",
+      "identity_holds": true,
+      "all_pointwise_margins_nonneg": true,
+      "conclusion": "sum(p_i)=1 (probability) and each (1-value_i)>=0 (L2) => K3 = 1 - sum(p_i*(1-value_i)) <= 1.",
+      "pass": true
+    },
+    "L4": {
+      "K3_formula": "2*cos(theta) - cos(2*theta)",
+      "derived_from_correlator": "C(t_i,t_j)=cos((j-i)*theta), K3 = C(1)+C(1)-C(2)",
+      "formula_matches": true,
+      "critical_points": [
+        "0",
+        "-pi/3",
+        "pi/3"
+      ],
+      "pi_3_is_critical": true,
+      "K_at_pi_3": "3/2",
+      "K_at_pi_3_equals_3_2": true,
+      "second_derivative_at_pi_3": "-3",
+      "is_maximum": true,
+      "violates_classical_bound_1": true,
+      "pass": true
+    },
+    "L5": {
+      "N": 8,
+      "a_reset": 1,
+      "representatives": {
+        "1": 0,
+        "-1": 4
+      },
+      "reset_conditional": {
+        "(1, 1)": "1",
+        "(1, -1)": "0",
+        "(-1, 1)": "0",
+        "(-1, -1)": "1"
+      },
+      "passive_a_excluded": [
+        0
+      ],
+      "passive_a_tested": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "per_a_comparison": [
+        {
+          "a": 1,
+          "conditional": {
+            "(1, 1)": "3/4",
+            "(1, -1)": "1/4",
+            "(-1, 1)": "1/4",
+            "(-1, -1)": "3/4"
+          },
+          "matches_reset": false
+        },
+        {
+          "a": 2,
+          "conditional": {
+            "(1, 1)": "1/2",
+            "(1, -1)": "1/2",
+            "(-1, 1)": "1/2",
+            "(-1, -1)": "1/2"
+          },
+          "matches_reset": false
+        },
+        {
+          "a": 3,
+          "conditional": {
+            "(1, 1)": "1/4",
+            "(1, -1)": "3/4",
+            "(-1, 1)": "3/4",
+            "(-1, -1)": "1/4"
+          },
+          "matches_reset": false
+        },
+        {
+          "a": 4,
+          "conditional": {
+            "(1, 1)": "0",
+            "(1, -1)": "1",
+            "(-1, 1)": "1",
+            "(-1, -1)": "0"
+          },
+          "matches_reset": false
+        },
+        {
+          "a": 5,
+          "conditional": {
+            "(1, 1)": "1/4",
+            "(1, -1)": "3/4",
+            "(-1, 1)": "3/4",
+            "(-1, -1)": "1/4"
+          },
+          "matches_reset": false
+        },
+        {
+          "a": 6,
+          "conditional": {
+            "(1, 1)": "1/2",
+            "(1, -1)": "1/2",
+            "(-1, 1)": "1/2",
+            "(-1, -1)": "1/2"
+          },
+          "matches_reset": false
+        },
+        {
+          "a": 7,
+          "conditional": {
+            "(1, 1)": "3/4",
+            "(1, -1)": "1/4",
+            "(-1, 1)": "1/4",
+            "(-1, -1)": "3/4"
+          },
+          "matches_reset": false
+        }
+      ],
+      "any_passive_matches_reset": false,
+      "separation_holds": true,
+      "pass": true
+    },
+    "pass": true
+  },
+  "stageB": {
+    "deliverable": "po93_0_macrorealism_proof.md",
+    "untagged_steps": []
+  },
+  "stageC": {
+    "scope_note": "Comparison on STORED SUMMARY NUMBERS only (D_B/D_cls TV-distances, and the reconstructed precession angle delta) - no re-simulation performed. Raw two-time CONDITIONAL KERNEL MATRICES were not persisted in metrics_91_v2.json or metrics_92.json (only derived distance summaries were), so a literal empirical K3 computed from Lab 91v2/92's own counted kernels is NOT reconstructable from stored data alone; this is disclosed rather than approximated. What IS a genuine stored-number computation: L4's exact closed-form K3(theta) evaluated at Lab 92's own stored, reconstructed precession angle delta.",
+    "delta_stored": 1.5709792577436454,
+    "K3_at_delta": 0.9996340711770796,
+    "K3_at_delta_exceeds_classical_bound": false,
+    "max_D_B": 0.5290532820705953,
+    "max_D_B_location": {
+      "seed": 93,
+      "tau": 10
+    },
+    "median_D_cls": 0.01192596348551796
+  },
+  "verdict": "PASS",
+  "verdict_reason": "All five lemmas verified exactly (rational/symbolic, no floats); the write-up has no untagged step; Stage C's stored-number comparison is consistent (delta gives K3=0.9996, and the classical/Born gaps were measured up to 0.529 in prior labs).",
+  "leakage_audit": {
+    "wrote_outside_lab_folder": false,
+    "numeric_pass_in_proof_stage": false,
+    "hypothesis_weakened": false,
+    "posthoc_threshold_change": false,
+    "metrics_hand_edited": false
+  }
+}

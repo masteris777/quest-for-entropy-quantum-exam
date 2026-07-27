@@ -1,0 +1,276 @@
+{
+  "lab": 155,
+  "stream": "cryptographic-substrate",
+  "stages": {
+    "A": {
+      "kind": "scout",
+      "P_flip_A_by_g": {
+        "0": 0.0,
+        "pi/8": 0.0,
+        "pi/4": 0.0,
+        "3pi/8": 0.0,
+        "pi/2": 0.0
+      },
+      "P_flip_B_gmax": 1.0,
+      "kill_triggered": false
+    },
+    "B": {
+      "kind": "scout",
+      "D_op_by_g": {
+        "0": 0.0,
+        "pi/8": 0.15315,
+        "pi/4": 0.50025,
+        "3pi/8": 0.8471,
+        "pi/2": 1.0
+      },
+      "V_by_g_imported": {
+        "0": 0.9534602946364868,
+        "pi/8": 0.8379368533522448,
+        "pi/4": 0.5705671378042277,
+        "3pi/8": 0.3065344874638674,
+        "pi/2": 0.001888311448761732
+      },
+      "V2D2_by_g": {
+        "0": 0.9090865334482963,
+        "pi/8": 0.7255930927058614,
+        "pi/4": 0.5757969212421086,
+        "3pi/8": 0.8115418020047358,
+        "pi/2": 1.0000035657201276
+      },
+      "max_V2D2": 1.0000035657201276,
+      "monotone": true,
+      "kill_triggered": false
+    }
+  },
+  "verdict": "PASS",
+  "verdict_reason": "Stage A calibration holds (P(flip|A) <= 0.02121 at every g, max 0.000000; P(flip|B, pi/2)=1.000000 vs ref 1.0). Stage B holds at every g: max V^2+D_op^2 = 1.0000 <= 1+3J = 1.0307, D_op monotone. The operational D dissolves Lab 154's estimator-attributed excess (3pi/8: 0.8115 vs 154's counted 1.0456; predicted 0.8225).",
+  "declared": {
+    "design": "operational D per adjudication-154 ruling (ledger #36): single-branch calibration ensembles (uA-only, uB-only) through the identical coupling + v2 marker fold; D_op = |P(flip|B) - P(flip|A)| counted; V imported unchanged from metrics_154.json",
+    "machinery": "eraser_retest_154 imported unmodified (couple_and_fly, certified_marker_fold, pool builder); only the pool seed root is this lab's",
+    "theta2_v2_frozen": [
+      1.0,
+      0.45,
+      0.425,
+      0.65
+    ],
+    "single_branch_states": "z = uA (A-only) / z = uB (B-only), deterministic; global phase provably cancels in the adapter",
+    "phi_cal": 0.0,
+    "phi_independence": "flight multiplies W0 and W1 by the same phase on the uB component; cancels in (n0, n1, rho_10) for single-branch states",
+    "J_lineage": 0.01021674439610848,
+    "kill1_bar": 1.0306502331883254,
+    "D_ref_by_g": {
+      "0": 0.0,
+      "pi/8": 0.14644660940672624,
+      "pi/4": 0.5000000000000001,
+      "3pi/8": 0.8535533905932737,
+      "pi/2": 1.0
+    },
+    "predicted_V2D2_by_g": {
+      "0": 0.9090865334482963,
+      "pi/8": 0.7235847796125876,
+      "pi/4": 0.5755468587421086,
+      "3pi/8": 0.8225167825980096,
+      "pi/2": 1.0000035657201276
+    },
+    "P_flip_B_ref_gmax": 1.0,
+    "V_154_frozen_literals": {
+      "0": 0.9534602946364868,
+      "pi/8": 0.8379368533522448,
+      "pi/4": 0.5705671378042277,
+      "3pi/8": 0.3065344874638674,
+      "pi/2": 0.001888311448761732
+    },
+    "g_grid": [
+      "0",
+      "pi/8",
+      "pi/4",
+      "3pi/8",
+      "pi/2"
+    ],
+    "N_cell": 20000,
+    "seed_block": [
+      15400,
+      15401,
+      15402,
+      15403,
+      15404,
+      15405,
+      15406,
+      15407
+    ],
+    "seed_usage": {
+      "pool_A": "[15406, 0, gi, 0]",
+      "pool_B": "[15406, 1, gi, 0]",
+      "unused_reserved": [
+        15400,
+        15401,
+        15402,
+        15403,
+        15404,
+        15405,
+        15407
+      ]
+    },
+    "noise_conventions": {
+      "sigma_cell": 0.007071067811865475,
+      "sigma_Dop": 0.01,
+      "sigma_Dpair": 0.014142135623730952,
+      "stageA_bar": 0.021213203435596427
+    },
+    "stage0": {
+      "theta2_identity": true,
+      "pool_provenance": true,
+      "imported_V_match": true
+    }
+  },
+  "detail": {
+    "A_detail": {
+      "bar_3sigma_cell": 0.021213203435596427,
+      "P_flip_B_gmax_ref": 1.0,
+      "checks_A": {
+        "0": true,
+        "pi/8": true,
+        "pi/4": true,
+        "3pi/8": true,
+        "pi/2": true
+      },
+      "check_B_gmax": true,
+      "cal_A": {
+        "0": {
+          "P_flip": 0.0,
+          "n_flip": 0,
+          "n": 20000,
+          "median_margin": 0.6922943344254995,
+          "keep_min": 1.0
+        },
+        "pi/8": {
+          "P_flip": 0.0,
+          "n_flip": 0,
+          "n": 20000,
+          "median_margin": 0.693397024467133,
+          "keep_min": 1.0
+        },
+        "pi/4": {
+          "P_flip": 0.0,
+          "n_flip": 0,
+          "n": 20000,
+          "median_margin": 0.695360786705711,
+          "keep_min": 1.0
+        },
+        "3pi/8": {
+          "P_flip": 0.0,
+          "n_flip": 0,
+          "n": 20000,
+          "median_margin": 0.6934925922080657,
+          "keep_min": 1.0
+        },
+        "pi/2": {
+          "P_flip": 0.0,
+          "n_flip": 0,
+          "n": 20000,
+          "median_margin": 0.692366041000523,
+          "keep_min": 1.0
+        }
+      },
+      "cal_B_gmax": {
+        "P_flip": 1.0,
+        "n_flip": 20000,
+        "n": 20000,
+        "median_margin": 0.6939464847060723,
+        "keep_min": 1.0
+      }
+    },
+    "B_detail": {
+      "kill1_bar": 1.0306502331883254,
+      "P_flip_A_by_g": {
+        "0": 0.0,
+        "pi/8": 0.0,
+        "pi/4": 0.0,
+        "3pi/8": 0.0,
+        "pi/2": 0.0
+      },
+      "P_flip_B_by_g": {
+        "0": 0.0,
+        "pi/8": 0.15315,
+        "pi/4": 0.50025,
+        "3pi/8": 0.8471,
+        "pi/2": 1.0
+      },
+      "D_ref_by_g": {
+        "0": 0.0,
+        "pi/8": 0.14644660940672624,
+        "pi/4": 0.5000000000000001,
+        "3pi/8": 0.8535533905932737,
+        "pi/2": 1.0
+      },
+      "predicted_V2D2_by_g": {
+        "0": 0.9090865334482963,
+        "pi/8": 0.7235847796125876,
+        "pi/4": 0.5755468587421086,
+        "3pi/8": 0.8225167825980096,
+        "pi/2": 1.0000035657201276
+      },
+      "dev_from_predicted": {
+        "0": 0.0,
+        "pi/8": 0.0020083130932737614,
+        "pi/4": 0.0002500624999999257,
+        "3pi/8": -0.010974980593273842,
+        "pi/2": 0.0
+      },
+      "bound_ok_by_g": {
+        "0": true,
+        "pi/8": true,
+        "pi/4": true,
+        "3pi/8": true,
+        "pi/2": true
+      },
+      "mono_violations_at": [],
+      "sigma_cell": 0.007071067811865475,
+      "sigma_Dop": 0.01,
+      "sigma_Dpair": 0.014142135623730952,
+      "fail_points": [],
+      "cal_B": {
+        "pi/2": {
+          "P_flip": 1.0,
+          "n_flip": 20000,
+          "n": 20000,
+          "median_margin": 0.6939464847060723,
+          "keep_min": 1.0
+        },
+        "0": {
+          "P_flip": 0.0,
+          "n_flip": 0,
+          "n": 20000,
+          "median_margin": 0.6956868958762275,
+          "keep_min": 1.0
+        },
+        "pi/8": {
+          "P_flip": 0.15315,
+          "n_flip": 3063,
+          "n": 20000,
+          "median_margin": 0.5438663257887101,
+          "keep_min": 0.3826834323650898
+        },
+        "pi/4": {
+          "P_flip": 0.50025,
+          "n_flip": 10005,
+          "n": 20000,
+          "median_margin": 0.40168431835465945,
+          "keep_min": 0.7071067811865476
+        },
+        "3pi/8": {
+          "P_flip": 0.8471,
+          "n_flip": 16942,
+          "n": 20000,
+          "median_margin": 0.5447538087397726,
+          "keep_min": 0.38268343236508984
+        }
+      }
+    }
+  },
+  "leakage_audit": {
+    "wrote_outside_lab_folder": false,
+    "posthoc_threshold_change": false,
+    "used_forbidden_imports": false
+  }
+}

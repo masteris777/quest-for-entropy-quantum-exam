@@ -1,0 +1,1042 @@
+{
+  "lab": "138-F3",
+  "stream": "cryptographic-substrate",
+  "kind": "scout",
+  "serves_node": "fate3_growing_substrate",
+  "stageA": {
+    "rewind": {
+      "max_state_err": 0,
+      "max_import_value_err": 0,
+      "n_checked": 1000,
+      "pass": true
+    },
+    "legality": {
+      "F0": {
+        "n_edges_checked": 219034,
+        "max_violation": 0,
+        "pass": true
+      },
+      "F1": {
+        "n_edges_checked": 219034,
+        "max_violation": 0,
+        "pass": true
+      },
+      "F2": {
+        "n_edges_checked": 219034,
+        "max_violation": 0,
+        "pass": true
+      },
+      "F3": {
+        "n_edges_checked": 219034,
+        "max_violation": 0,
+        "pass": true
+      },
+      "F4": {
+        "n_edges_checked": 219034,
+        "max_violation": 0,
+        "pass": true
+      }
+    },
+    "event_identity": {
+      "F0": {
+        "n_root": 24,
+        "n_derived_checked": 56360,
+        "n_mismatches": 0,
+        "pass": true
+      },
+      "F1": {
+        "n_root": 24,
+        "n_derived_checked": 56360,
+        "n_mismatches": 0,
+        "pass": true
+      },
+      "F2": {
+        "n_root": 24,
+        "n_derived_checked": 56360,
+        "n_mismatches": 0,
+        "pass": true
+      },
+      "F3": {
+        "n_root": 24,
+        "n_derived_checked": 56360,
+        "n_mismatches": 0,
+        "pass": true
+      },
+      "F4": {
+        "n_root": 24,
+        "n_derived_checked": 56360,
+        "n_mismatches": 0,
+        "pass": true
+      }
+    },
+    "pass": true
+  },
+  "stageB": {
+    "record_reconstruction_matches": {
+      "F0": true,
+      "F1": true,
+      "F2": true,
+      "F3": true,
+      "F4": true
+    },
+    "per_foliation": {
+      "F0": {
+        "histogram": [
+          1628,
+          1572
+        ],
+        "histogram_matches_standard": true,
+        "N_info_total": 48.0,
+        "N_info_diff_from_standard": 0.0,
+        "import_checks": [
+          {
+            "import_idx": 0,
+            "tick": 150,
+            "onset_tick": 155,
+            "path_bound_tick": 155,
+            "path_bound_slice": 155,
+            "onset_slice": 155,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 1,
+            "tick": 300,
+            "onset_tick": 314,
+            "path_bound_tick": 304,
+            "path_bound_slice": 304,
+            "onset_slice": 314,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 2,
+            "tick": 450,
+            "onset_tick": 456,
+            "path_bound_tick": 456,
+            "path_bound_slice": 456,
+            "onset_slice": 456,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 3,
+            "tick": 600,
+            "onset_tick": 617,
+            "path_bound_tick": 605,
+            "path_bound_slice": 605,
+            "onset_slice": 617,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 4,
+            "tick": 750,
+            "onset_tick": 757,
+            "path_bound_tick": 757,
+            "path_bound_slice": 757,
+            "onset_slice": 757,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 5,
+            "tick": 900,
+            "onset_tick": 920,
+            "path_bound_tick": 906,
+            "path_bound_slice": 906,
+            "onset_slice": 920,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 6,
+            "tick": 1050,
+            "onset_tick": 1058,
+            "path_bound_tick": 1058,
+            "path_bound_slice": 1058,
+            "onset_slice": 1058,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 7,
+            "tick": 1200,
+            "onset_tick": 1224,
+            "path_bound_tick": 1207,
+            "path_bound_slice": 1207,
+            "onset_slice": 1224,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 8,
+            "tick": 1350,
+            "onset_tick": 1359,
+            "path_bound_tick": 1359,
+            "path_bound_slice": 1359,
+            "onset_slice": 1359,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 9,
+            "tick": 1500,
+            "onset_tick": 1529,
+            "path_bound_tick": 1508,
+            "path_bound_slice": 1508,
+            "onset_slice": 1529,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 10,
+            "tick": 1650,
+            "onset_tick": 1660,
+            "path_bound_tick": 1660,
+            "path_bound_slice": 1660,
+            "onset_slice": 1660,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 11,
+            "tick": 1800,
+            "onset_tick": 1823,
+            "path_bound_tick": 1809,
+            "path_bound_slice": 1809,
+            "onset_slice": 1823,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 12,
+            "tick": 1950,
+            "onset_tick": 1961,
+            "path_bound_tick": 1961,
+            "path_bound_slice": 1961,
+            "onset_slice": 1961,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 13,
+            "tick": 2100,
+            "onset_tick": 2130,
+            "path_bound_tick": 2110,
+            "path_bound_slice": 2110,
+            "onset_slice": 2130,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 14,
+            "tick": 2250,
+            "onset_tick": 2262,
+            "path_bound_tick": 2262,
+            "path_bound_slice": 2262,
+            "onset_slice": 2262,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 15,
+            "tick": 2400,
+            "onset_tick": 2429,
+            "path_bound_tick": 2411,
+            "path_bound_slice": 2411,
+            "onset_slice": 2429,
+            "respects_bound": true
+          }
+        ],
+        "all_onsets_respect_bound": true
+      },
+      "F1": {
+        "histogram": [
+          1628,
+          1572
+        ],
+        "histogram_matches_standard": true,
+        "N_info_total": 48.0,
+        "N_info_diff_from_standard": 0.0,
+        "import_checks": [
+          {
+            "import_idx": 0,
+            "tick": 150,
+            "onset_tick": 155,
+            "path_bound_tick": 155,
+            "path_bound_slice": 314,
+            "onset_slice": 314,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 1,
+            "tick": 300,
+            "onset_tick": 314,
+            "path_bound_tick": 304,
+            "path_bound_slice": 612,
+            "onset_slice": 632,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 2,
+            "tick": 450,
+            "onset_tick": 456,
+            "path_bound_tick": 456,
+            "path_bound_slice": 916,
+            "onset_slice": 916,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 3,
+            "tick": 600,
+            "onset_tick": 617,
+            "path_bound_tick": 605,
+            "path_bound_slice": 1214,
+            "onset_slice": 1238,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 4,
+            "tick": 750,
+            "onset_tick": 757,
+            "path_bound_tick": 757,
+            "path_bound_slice": 1518,
+            "onset_slice": 1518,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 5,
+            "tick": 900,
+            "onset_tick": 920,
+            "path_bound_tick": 906,
+            "path_bound_slice": 1816,
+            "onset_slice": 1844,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 6,
+            "tick": 1050,
+            "onset_tick": 1058,
+            "path_bound_tick": 1058,
+            "path_bound_slice": 2120,
+            "onset_slice": 2120,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 7,
+            "tick": 1200,
+            "onset_tick": 1224,
+            "path_bound_tick": 1207,
+            "path_bound_slice": 2418,
+            "onset_slice": 2452,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 8,
+            "tick": 1350,
+            "onset_tick": 1359,
+            "path_bound_tick": 1359,
+            "path_bound_slice": 2722,
+            "onset_slice": 2722,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 9,
+            "tick": 1500,
+            "onset_tick": 1529,
+            "path_bound_tick": 1508,
+            "path_bound_slice": 3020,
+            "onset_slice": 3062,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 10,
+            "tick": 1650,
+            "onset_tick": 1660,
+            "path_bound_tick": 1660,
+            "path_bound_slice": 3324,
+            "onset_slice": 3324,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 11,
+            "tick": 1800,
+            "onset_tick": 1823,
+            "path_bound_tick": 1809,
+            "path_bound_slice": 3622,
+            "onset_slice": 3650,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 12,
+            "tick": 1950,
+            "onset_tick": 1961,
+            "path_bound_tick": 1961,
+            "path_bound_slice": 3926,
+            "onset_slice": 3926,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 13,
+            "tick": 2100,
+            "onset_tick": 2130,
+            "path_bound_tick": 2110,
+            "path_bound_slice": 4224,
+            "onset_slice": 4264,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 14,
+            "tick": 2250,
+            "onset_tick": 2262,
+            "path_bound_tick": 2262,
+            "path_bound_slice": 4528,
+            "onset_slice": 4528,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 15,
+            "tick": 2400,
+            "onset_tick": 2429,
+            "path_bound_tick": 2411,
+            "path_bound_slice": 4826,
+            "onset_slice": 4862,
+            "respects_bound": true
+          }
+        ],
+        "all_onsets_respect_bound": true
+      },
+      "F2": {
+        "histogram": [
+          1628,
+          1572
+        ],
+        "histogram_matches_standard": true,
+        "N_info_total": 48.0,
+        "N_info_diff_from_standard": 0.0,
+        "import_checks": [
+          {
+            "import_idx": 0,
+            "tick": 150,
+            "onset_tick": 155,
+            "path_bound_tick": 155,
+            "path_bound_slice": 306,
+            "onset_slice": 306,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 1,
+            "tick": 300,
+            "onset_tick": 314,
+            "path_bound_tick": 304,
+            "path_bound_slice": 604,
+            "onset_slice": 624,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 2,
+            "tick": 450,
+            "onset_tick": 456,
+            "path_bound_tick": 456,
+            "path_bound_slice": 908,
+            "onset_slice": 908,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 3,
+            "tick": 600,
+            "onset_tick": 617,
+            "path_bound_tick": 605,
+            "path_bound_slice": 1206,
+            "onset_slice": 1230,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 4,
+            "tick": 750,
+            "onset_tick": 757,
+            "path_bound_tick": 757,
+            "path_bound_slice": 1510,
+            "onset_slice": 1510,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 5,
+            "tick": 900,
+            "onset_tick": 920,
+            "path_bound_tick": 906,
+            "path_bound_slice": 1808,
+            "onset_slice": 1836,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 6,
+            "tick": 1050,
+            "onset_tick": 1058,
+            "path_bound_tick": 1058,
+            "path_bound_slice": 2112,
+            "onset_slice": 2112,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 7,
+            "tick": 1200,
+            "onset_tick": 1224,
+            "path_bound_tick": 1207,
+            "path_bound_slice": 2410,
+            "onset_slice": 2444,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 8,
+            "tick": 1350,
+            "onset_tick": 1359,
+            "path_bound_tick": 1359,
+            "path_bound_slice": 2714,
+            "onset_slice": 2714,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 9,
+            "tick": 1500,
+            "onset_tick": 1529,
+            "path_bound_tick": 1508,
+            "path_bound_slice": 3012,
+            "onset_slice": 3054,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 10,
+            "tick": 1650,
+            "onset_tick": 1660,
+            "path_bound_tick": 1660,
+            "path_bound_slice": 3316,
+            "onset_slice": 3316,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 11,
+            "tick": 1800,
+            "onset_tick": 1823,
+            "path_bound_tick": 1809,
+            "path_bound_slice": 3614,
+            "onset_slice": 3642,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 12,
+            "tick": 1950,
+            "onset_tick": 1961,
+            "path_bound_tick": 1961,
+            "path_bound_slice": 3918,
+            "onset_slice": 3918,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 13,
+            "tick": 2100,
+            "onset_tick": 2130,
+            "path_bound_tick": 2110,
+            "path_bound_slice": 4216,
+            "onset_slice": 4256,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 14,
+            "tick": 2250,
+            "onset_tick": 2262,
+            "path_bound_tick": 2262,
+            "path_bound_slice": 4520,
+            "onset_slice": 4520,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 15,
+            "tick": 2400,
+            "onset_tick": 2429,
+            "path_bound_tick": 2411,
+            "path_bound_slice": 4818,
+            "onset_slice": 4854,
+            "respects_bound": true
+          }
+        ],
+        "all_onsets_respect_bound": true
+      },
+      "F3": {
+        "histogram": [
+          1628,
+          1572
+        ],
+        "histogram_matches_standard": true,
+        "N_info_total": 48.0,
+        "N_info_diff_from_standard": 0.0,
+        "import_checks": [
+          {
+            "import_idx": 0,
+            "tick": 150,
+            "onset_tick": 155,
+            "path_bound_tick": 155,
+            "path_bound_slice": 314,
+            "onset_slice": 314,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 1,
+            "tick": 300,
+            "onset_tick": 314,
+            "path_bound_tick": 304,
+            "path_bound_slice": 612,
+            "onset_slice": 632,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 2,
+            "tick": 450,
+            "onset_tick": 456,
+            "path_bound_tick": 456,
+            "path_bound_slice": 100908,
+            "onset_slice": 100908,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 3,
+            "tick": 600,
+            "onset_tick": 617,
+            "path_bound_tick": 605,
+            "path_bound_slice": 101206,
+            "onset_slice": 101230,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 4,
+            "tick": 750,
+            "onset_tick": 757,
+            "path_bound_tick": 757,
+            "path_bound_slice": 101510,
+            "onset_slice": 101510,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 5,
+            "tick": 900,
+            "onset_tick": 920,
+            "path_bound_tick": 906,
+            "path_bound_slice": 201816,
+            "onset_slice": 201844,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 6,
+            "tick": 1050,
+            "onset_tick": 1058,
+            "path_bound_tick": 1058,
+            "path_bound_slice": 202120,
+            "onset_slice": 202120,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 7,
+            "tick": 1200,
+            "onset_tick": 1224,
+            "path_bound_tick": 1207,
+            "path_bound_slice": 302410,
+            "onset_slice": 302444,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 8,
+            "tick": 1350,
+            "onset_tick": 1359,
+            "path_bound_tick": 1359,
+            "path_bound_slice": 302714,
+            "onset_slice": 302714,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 9,
+            "tick": 1500,
+            "onset_tick": 1529,
+            "path_bound_tick": 1508,
+            "path_bound_slice": 303012,
+            "onset_slice": 303054,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 10,
+            "tick": 1650,
+            "onset_tick": 1660,
+            "path_bound_tick": 1660,
+            "path_bound_slice": 403324,
+            "onset_slice": 403324,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 11,
+            "tick": 1800,
+            "onset_tick": 1823,
+            "path_bound_tick": 1809,
+            "path_bound_slice": 403622,
+            "onset_slice": 403650,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 12,
+            "tick": 1950,
+            "onset_tick": 1961,
+            "path_bound_tick": 1961,
+            "path_bound_slice": 403926,
+            "onset_slice": 403926,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 13,
+            "tick": 2100,
+            "onset_tick": 2130,
+            "path_bound_tick": 2110,
+            "path_bound_slice": 504216,
+            "onset_slice": 504256,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 14,
+            "tick": 2250,
+            "onset_tick": 2262,
+            "path_bound_tick": 2262,
+            "path_bound_slice": 504520,
+            "onset_slice": 504520,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 15,
+            "tick": 2400,
+            "onset_tick": 2429,
+            "path_bound_tick": 2411,
+            "path_bound_slice": 604826,
+            "onset_slice": 604862,
+            "respects_bound": true
+          }
+        ],
+        "all_onsets_respect_bound": true
+      },
+      "F4": {
+        "histogram": [
+          1628,
+          1572
+        ],
+        "histogram_matches_standard": true,
+        "N_info_total": 48.0,
+        "N_info_diff_from_standard": 0.0,
+        "import_checks": [
+          {
+            "import_idx": 0,
+            "tick": 150,
+            "onset_tick": 155,
+            "path_bound_tick": 155,
+            "path_bound_slice": 155,
+            "onset_slice": 155,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 1,
+            "tick": 300,
+            "onset_tick": 314,
+            "path_bound_tick": 304,
+            "path_bound_slice": 304,
+            "onset_slice": 314,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 2,
+            "tick": 450,
+            "onset_tick": 456,
+            "path_bound_tick": 456,
+            "path_bound_slice": 456,
+            "onset_slice": 456,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 3,
+            "tick": 600,
+            "onset_tick": 617,
+            "path_bound_tick": 605,
+            "path_bound_slice": 605,
+            "onset_slice": 617,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 4,
+            "tick": 750,
+            "onset_tick": 757,
+            "path_bound_tick": 757,
+            "path_bound_slice": 757,
+            "onset_slice": 757,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 5,
+            "tick": 900,
+            "onset_tick": 920,
+            "path_bound_tick": 906,
+            "path_bound_slice": 906,
+            "onset_slice": 920,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 6,
+            "tick": 1050,
+            "onset_tick": 1058,
+            "path_bound_tick": 1058,
+            "path_bound_slice": 1058,
+            "onset_slice": 1058,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 7,
+            "tick": 1200,
+            "onset_tick": 1224,
+            "path_bound_tick": 1207,
+            "path_bound_slice": 1207,
+            "onset_slice": 1224,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 8,
+            "tick": 1350,
+            "onset_tick": 1359,
+            "path_bound_tick": 1359,
+            "path_bound_slice": 1359,
+            "onset_slice": 1359,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 9,
+            "tick": 1500,
+            "onset_tick": 1529,
+            "path_bound_tick": 1508,
+            "path_bound_slice": 1508,
+            "onset_slice": 1529,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 10,
+            "tick": 1650,
+            "onset_tick": 1660,
+            "path_bound_tick": 1660,
+            "path_bound_slice": 1660,
+            "onset_slice": 1660,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 11,
+            "tick": 1800,
+            "onset_tick": 1823,
+            "path_bound_tick": 1809,
+            "path_bound_slice": 1809,
+            "onset_slice": 1823,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 12,
+            "tick": 1950,
+            "onset_tick": 1961,
+            "path_bound_tick": 1961,
+            "path_bound_slice": 1961,
+            "onset_slice": 1961,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 13,
+            "tick": 2100,
+            "onset_tick": 2130,
+            "path_bound_tick": 2110,
+            "path_bound_slice": 2110,
+            "onset_slice": 2130,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 14,
+            "tick": 2250,
+            "onset_tick": 2262,
+            "path_bound_tick": 2262,
+            "path_bound_slice": 2262,
+            "onset_slice": 2262,
+            "respects_bound": true
+          },
+          {
+            "import_idx": 15,
+            "tick": 2400,
+            "onset_tick": 2429,
+            "path_bound_tick": 2411,
+            "path_bound_slice": 2411,
+            "onset_slice": 2429,
+            "respects_bound": true
+          }
+        ],
+        "all_onsets_respect_bound": true
+      }
+    },
+    "N_info_total": 48.0,
+    "N_info_total_predicted": 48.0,
+    "histogram_standard": [
+      1628,
+      1572
+    ],
+    "p_inv": true
+  },
+  "stageC": {
+    "markov_standard": 0.01498236506319478,
+    "battery_finals_standard": {
+      "markov_k1": 3208.866254283837,
+      "markov_k2": 3218.043266698373,
+      "markov_k4": 3256.8539321507187,
+      "context_tree": 3527.6622994435306
+    },
+    "battery_node_counts_standard": 264,
+    "twin_seeds": [
+      50100,
+      50101,
+      50102,
+      50103
+    ],
+    "twin_markov_values": [
+      0.019916071945961344,
+      0.017478426740383024,
+      0.004617593167347056,
+      0.009325682256276224
+    ],
+    "twin_markov_mean": 0.012834443527491912,
+    "twin_markov_spread": 0.015298478778614288,
+    "twin_battery_stats": {
+      "markov_k1": {
+        "mean": 3210.1310844024038,
+        "spread": 2.6148990338006115
+      },
+      "markov_k2": {
+        "mean": 3217.0260914404453,
+        "spread": 4.625027881844744
+      },
+      "markov_k4": {
+        "mean": 3247.9809579155017,
+        "spread": 15.575286900143965
+      },
+      "context_tree": {
+        "mean": 3534.1906144133654,
+        "spread": 28.008696565457285
+      }
+    },
+    "split_table": {
+      "F0": {
+        "markov_score": 0.01498236506319478,
+        "markov_diff_from_standard": 0.0,
+        "markov_diff_is_real": false,
+        "battery_finals": {
+          "markov_k1": 3208.866254283837,
+          "markov_k2": 3218.043266698373,
+          "markov_k4": 3256.8539321507187,
+          "context_tree": 3527.6622994435306
+        },
+        "battery_diffs_from_standard": {
+          "markov_k1": 0.0,
+          "markov_k2": 0.0,
+          "markov_k4": 0.0,
+          "context_tree": 0.0
+        },
+        "battery_diffs_real": {
+          "markov_k1": false,
+          "markov_k2": false,
+          "markov_k4": false,
+          "context_tree": false
+        }
+      },
+      "F1": {
+        "markov_score": 0.01498236506319478,
+        "markov_diff_from_standard": 0.0,
+        "markov_diff_is_real": false,
+        "battery_finals": {
+          "markov_k1": 3208.866254283837,
+          "markov_k2": 3218.043266698373,
+          "markov_k4": 3256.8539321507187,
+          "context_tree": 3527.6622994435306
+        },
+        "battery_diffs_from_standard": {
+          "markov_k1": 0.0,
+          "markov_k2": 0.0,
+          "markov_k4": 0.0,
+          "context_tree": 0.0
+        },
+        "battery_diffs_real": {
+          "markov_k1": false,
+          "markov_k2": false,
+          "markov_k4": false,
+          "context_tree": false
+        }
+      },
+      "F2": {
+        "markov_score": 0.01498236506319478,
+        "markov_diff_from_standard": 0.0,
+        "markov_diff_is_real": false,
+        "battery_finals": {
+          "markov_k1": 3208.866254283837,
+          "markov_k2": 3218.043266698373,
+          "markov_k4": 3256.8539321507187,
+          "context_tree": 3527.6622994435306
+        },
+        "battery_diffs_from_standard": {
+          "markov_k1": 0.0,
+          "markov_k2": 0.0,
+          "markov_k4": 0.0,
+          "context_tree": 0.0
+        },
+        "battery_diffs_real": {
+          "markov_k1": false,
+          "markov_k2": false,
+          "markov_k4": false,
+          "context_tree": false
+        }
+      },
+      "F3": {
+        "markov_score": 0.01498236506319478,
+        "markov_diff_from_standard": 0.0,
+        "markov_diff_is_real": false,
+        "battery_finals": {
+          "markov_k1": 3208.866254283837,
+          "markov_k2": 3218.043266698373,
+          "markov_k4": 3256.8539321507187,
+          "context_tree": 3527.6622994435306
+        },
+        "battery_diffs_from_standard": {
+          "markov_k1": 0.0,
+          "markov_k2": 0.0,
+          "markov_k4": 0.0,
+          "context_tree": 0.0
+        },
+        "battery_diffs_real": {
+          "markov_k1": false,
+          "markov_k2": false,
+          "markov_k4": false,
+          "context_tree": false
+        }
+      },
+      "F4": {
+        "markov_score": 0.01498236506319478,
+        "markov_diff_from_standard": 0.0,
+        "markov_diff_is_real": false,
+        "battery_finals": {
+          "markov_k1": 3208.866254283837,
+          "markov_k2": 3218.043266698373,
+          "markov_k4": 3256.8539321507187,
+          "context_tree": 3527.6622994435306
+        },
+        "battery_diffs_from_standard": {
+          "markov_k1": 0.0,
+          "markov_k2": 0.0,
+          "markov_k4": 0.0,
+          "context_tree": 0.0
+        },
+        "battery_diffs_real": {
+          "markov_k1": false,
+          "markov_k2": false,
+          "markov_k4": false,
+          "context_tree": false
+        }
+      }
+    },
+    "direction_note": "Every quantity computable from the observer's OWN single-worldline outcome sequence - histogram, N_info_total, Markov defect, and every bounded-battery predictor's final loss alike - comes out EXACTLY foliation-invariant, not just the doctrine's required subset. The mechanism: a legal foliation, by definition, places (x,t) strictly after (x,t-1) in slice order for every x - so no legal foliation can ever reorder one fixed worldline's own events, regardless of what happens elsewhere in the block. SN-137-1's order-blind/order-sensitive split would only have bite for an instrument that combines events from MULTIPLE different worldlines in an order-dependent way - none of 133/136/138's instruments do that, since they all condition on one fixed observer column alone."
+  },
+  "verdict": "DOCTRINE-HOLDS",
+  "verdict_reason": "Stage A gates pass (legality + event-identity tripwire, all 5 foliations); P-INV holds (histogram, N_info_total=48.0 bits, and every per-import onset respects its path bound, across all 5 foliations). Stage C additionally finds the order-sensitive set (Markov defect, bounded battery) ALSO exactly invariant - stronger than the doctrine strictly requires, for the structural reason stated in stageC.direction_note.",
+  "leakage_audit": {
+    "wrote_outside_lab_folder": false,
+    "illegal_foliation_used": false,
+    "block_recomputed_per_foliation": false,
+    "single_pair_floors": false,
+    "posthoc_threshold_change": false,
+    "metrics_hand_edited": false
+  }
+}

@@ -1,0 +1,108 @@
+
+THE QUANTUM EXAM - scorecard verification
+re-checking every number the article quotes against metrics/
+
+
+  A. Static statistics
+  --------------------
+  [ok  ] CH-01  Born distance, low end of the range                     measured 0.007  article 0.007  (tol 0)
+  [ok  ] CH-01  Born distance, high end of the range                    measured 0.015  article 0.015  (tol 0)
+  [ok  ] CH-01  three certified frames carry a J each                   measured 3  article 3  (tol 0)
+  [ok  ] CH-02  restored cell Born distance                             measured 0.00204553  article 0.002  (tol 0.0005)
+  [ok  ] CH-02  its passive control fails                               measured True  article True  [passive observation scores 0.963 - it does not work]
+  [ok  ] CH-03  median contextuality spread                             measured 0.0156  article 0.0156  (tol 0.0001)  [median of four certified directions]
+  [ok  ] CH-03  generic control, times worse                            measured 10.7  article 10.6  (tol 0.15)
+  [ok  ] CH-03  same direction, different contexts: exact agreement     measured 0  article 0  (tol 0)
+  [ok  ] CH-04  mixture affinity, worst residual                        measured 0.002  article 0.002  (tol 0.0005)
+  [ok  ] CH-04  ... inside its predeclared bar                          measured True  article True
+  [ok  ] CH-04  generic control is 10x worse                            measured True  article True
+
+  B. Interference
+  ---------------
+  [ok  ] CH-05  fringe RMS, best cell                                   measured 0.015  article 0.015  (tol 0.0005)
+  [ok  ] CH-05  fringe RMS, worst cell                                  measured 0.047  article 0.047  (tol 0.0005)
+  [ok  ] CH-05  generic control is an order worse                       measured True  article True  [control RMS 0.287]
+  [ok  ] CH-06  the incumbent's contrast floor                          measured 0.012  article 0.012  (tol 0.0011)  [counted dark fraction at the deepest rung - about 1.2 percent]
+  [ok  ] CH-06  hierarchical fold: dark events at the deepest rung      measured 0  article 0  (tol 0)
+  [ok  ] CH-06  ... out of N events                                     measured 500000  article 500000  (tol 0)
+  [ok  ] CH-06  ... where Born predicts about                           measured 50  article 50  (tol 0)
+  [ok  ] CH-06  gauge twirl leaves the residual at                      measured 0.92  article 0.92  (tol 0.005)
+  [ok  ] CH-06  ... classified                                          measured 'INVARIANT'  article 'INVARIANT'
+  [ok  ] CH-06  the twirl really was a group of 24                      measured True  article True
+  [ok  ] CH-07  worst gap between counted visibility and the analytic curve measured 0.023  article 0.023  (tol 0.0005)  [8 noise levels across two frames]
+  [ok  ] CH-07  every noise level tracks                                measured True  article True
+  [ok  ] CH-07  high-statistics fringe cell still clean (800k events)   measured True  article True
+  [ok  ] CH-08  visibility at full path marking                         measured 0.002  article 0.002  (tol 0.0002)
+  [ok  ] CH-08  path information at full marking                        measured 1  article 1  (tol 0)
+  [ok  ] CH-08  reproduced on fresh cells                               measured True  article True
+
+  C. Measurement dynamics
+  -----------------------
+  [ok  ] CH-09  repeats recorded                                        measured 177000  article 177000  (tol 0)
+  [ok  ] CH-09  out of                                                  measured 177000  article 177000  (tol 0)
+  [ok  ] CH-09  certainty is exactly 1.0                                measured True  article True
+  [ok  ] CH-09  isotropic control drops to                              measured 0.34  article 0.34  (tol 0.01)
+  [ok  ] CH-09  scout run agreed                                        measured 1  article 1  (tol 0)
+  [ok  ] CH-09b second world, worst table entry                         measured 0.006  article 0.006  (tol 0.0002)
+  [ok  ] CH-09b every cell inside its predeclared bar                   measured True  article True  [worst first-world cell 0.0578 vs bar 0.0643]
+  [ok  ] CH-09b isotropic control                                       measured 0.55  article 0.55  (tol 0.01)
+  [ok  ] CH-10  RMS against the free-evolution curve, worst cell        measured 0.018  article 0.018  (tol 0.0005)
+  [ok  ] CH-10  times further from the freezing control, worst cell     measured 6  article 6  (tol 0)  [range 6.5x - 13.4x over 6 cells]
+  [ok  ] CH-10  coprime schedule offsets used                           measured [7, 11]  article [7, 11]
+  [ok  ] CH-11  worst marked visibility, any insertion time             measured 0.0076  article 0.0076  (tol 0.0001)
+  [ok  ] CH-11  unmarked fringes are fully there                        measured 0.99  article 0.99  (tol 0.005)
+  [ok  ] CH-11  no kill triggered                                       measured False  article False
+  [ok  ] CH-12  null-conditioned visibility                             measured 0.0058  article 0.0058  (tol 0.0002)
+  [ok  ] CH-12  the transferred-recipe miss is on the record            measured 'FAIL'  article 'FAIL'  [repaired by re-fitting natively - see tests/test13.md]
+  [ok  ] CH-12  ... and the native re-fit passes                        measured 'PASS'  article 'PASS'
+  [ok  ] CH-13  subensemble split, low side                             measured 49.97  article 49.97  (tol 0.01)
+  [ok  ] CH-13  subensemble split, high side                            measured 50.03  article 50.03  (tol 0.01)
+  [ok  ] CH-13  fringes recovered, plus branch                          measured 0.955  article 0.955  (tol 0.0006)
+  [ok  ] CH-13  fringes recovered, minus branch                         measured 0.952  article 0.952  (tol 0.0006)
+  [ok  ] CH-13  phase gap between the branches                          measured 3.1399  article 3.1399  (tol 0.0001)
+  [ok  ] CH-13  ... which misses pi by                                  measured 0.0017  article 0.0017  (tol 0.0001)
+  [ok  ] CH-13  pooled together, flat                                   measured 0.0002  article 0.0002  (tol 0.0001)
+  [ok  ] CH-14  max of V^2 + D^2                                        measured 1  article 1  (tol 1e-06)
+  [ok  ] CH-14  ... inside the bound                                    measured True  article True
+  [ok  ] CH-14  it saturates at full coupling                           measured True  article True
+  [ok  ] CH-14  calibration arm A never flips                           measured 0  article 0  (tol 0)
+
+  D. Two systems at once
+  ----------------------
+  [ok  ] CH-15  seeds where the far record is bit-identical pre-cone    measured 4  article 4  (tol 0)
+  [ok  ] CH-15  seeds total                                             measured 4  article 4  (tol 0)
+  [ok  ] CH-15  the near observer DOES diverge (positive control)       measured True  article True
+  [ok  ] CH-15  foliation gate: event-identity mismatches               measured 0  article 0  (tol 0)
+  [ok  ] CH-16  S recomputed from the four raw correlators              measured 2.0005  article 2.0005  (tol 0.0001)
+  [ok  ] CH-16  ... equals the stored value                             measured True  article True
+  [ok  ] CH-16  uncertainty                                             measured 0.0077  article 0.0077  (tol 0.0001)
+  [ok  ] CH-16  severed control drops to                                measured 0.002  article 0.002  (tol 0.0005)
+  [ok  ] CH-16  no-signalling checks run                                measured 16  article 16  (tol 0)
+  [ok  ] CH-16  largest of them                                         measured 0.006  article 0.006  (tol 0.0005)
+  [ok  ] CH-16  against a bar of                                        measured 0.019  article 0.019  (tol 0.0005)
+  [ok  ] CH-16  all inside their bars                                   measured True  article True
+  [ok  ] CH-16  settings never derived from world state                 measured False  article False
+  [ok  ] CH-17  path information at maximal apparatus mass              measured 0.0001  article 0.0001  (tol 5e-05)
+  [ok  ] CH-17  D falls monotonically with mass                         measured True  article True
+  [ok  ] CH-17  V^2 + D^2 stays inside the Englert bound                measured True  article True
+  [ok  ] CH-17  exchange-ledger runs checked                            measured 2.6e+06  article 2.6e+06  (tol 0)
+  [ok  ] CH-17  ... non-zero residuals                                  measured 0  article 0  (tol 0)
+  [ok  ] CH-17  the m=0 anomaly, first run                              measured 0.0173  article 0.0173  (tol 0.0001)
+  [ok  ] CH-17  ... and on fresh seeds                                  measured 0.0168  article 0.0168  (tol 0.0001)  [named ANOM-149-m0, carried open]
+
+  E. Structural theorems
+  ----------------------
+  [ok  ] CH-18  lemmas machine-checked                                  measured 6  article 6  (tol 0)
+  [ok  ] CH-18  no numeric shortcut inside the proof stage              measured False  article False
+  [ok  ] CH-18  verdict                                                 measured 'PASS'  article 'PASS'
+  [ok  ] CH-19  passively watched world scores                          measured 0.99963  article 0.99963  (tol 1e-05)
+  [ok  ] CH-19  ... without crossing the classical bound of 1           measured False  article False
+  [ok  ] CH-19  quantum value, symbolic                                 measured '2*cos(theta) - cos(2*theta)'  article '2*cos(theta) - cos(2*theta)'
+  [ok  ] CH-19  verdict                                                 measured 'PASS'  article 'PASS'
+
+----------------------------------------------------------------------------------------------------
+  ALL 82 CHECKS PASS - every number in the article matches the frozen lab metrics.
+----------------------------------------------------------------------------------------------------
+  Scope: this verifies the scorecard against frozen evidence; it does not re-run the
+  experiments. The machine itself runs from scratch in the episode 2 pack.
+

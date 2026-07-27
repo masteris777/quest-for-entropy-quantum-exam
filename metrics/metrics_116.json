@@ -1,0 +1,204 @@
+{
+  "lab": 116,
+  "stream": "cryptographic-substrate",
+  "kind": "proof",
+  "serves_obligation": "PO-88-1",
+  "stageA": {
+    "L1": {
+      "statement": "R(th)^T R(th)=I, J0^2=-I, J0 R(th)=R(th) J0, exact symbolic for generic theta.",
+      "imported_from": "88_forced_complex_structure/forced_complex_structure_88.py:run_stage_a",
+      "A1_orthogonal": true,
+      "A2_J_squared": true,
+      "A3_commutes": true,
+      "pass": true
+    },
+    "L2": {
+      "dim2": {
+        "dim": 2,
+        "identity_checked": "A(u+iv) - (c+is)(u+iv) == [Au-(cu-sv)] + i[Av-(su+cv)]  (pure algebra, unconditional)",
+        "diff_is_zero": true,
+        "conclusion": "Hence A(u+iv)=(c+is)(u+iv)  <=>  Au=cu-sv AND Av=su+cv  <=>  A acts as [[c,s],[-s,c]] in (u,v)."
+      },
+      "dim4": {
+        "dim": 4,
+        "identity_checked": "A(u+iv) - (c+is)(u+iv) == [Au-(cu-sv)] + i[Av-(su+cv)]  (pure algebra, unconditional)",
+        "diff_is_zero": true,
+        "conclusion": "Hence A(u+iv)=(c+is)(u+iv)  <=>  Au=cu-sv AND Av=su+cv  <=>  A acts as [[c,s],[-s,c]] in (u,v)."
+      },
+      "pass": true
+    },
+    "L3": {
+      "dim3": {
+        "dim": 3,
+        "orthogonal_ok": true,
+        "span_closed": true,
+        "images": [
+          {
+            "Awp": "Matrix([[0, 0, 1]])",
+            "in_span_Wperp": true
+          }
+        ],
+        "pass": true
+      },
+      "dim4": {
+        "dim": 4,
+        "orthogonal_ok": true,
+        "span_closed": true,
+        "images": [
+          {
+            "Awp": "Matrix([[0, 0, 5/13, 12/13]])",
+            "in_span_Wperp": true
+          },
+          {
+            "Awp": "Matrix([[0, 0, -12/13, 5/13]])",
+            "in_span_Wperp": true
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    "L4": {
+      "per_n": {
+        "n_planes_1": {
+          "n_planes": 1,
+          "dim": 2,
+          "J_squared_ok": true,
+          "commutes_ok": true,
+          "base_pass": true,
+          "conjugation": {
+            "note": "symbolic orthogonal Q(phi=phi_1)",
+            "Q_is_orthogonal": true,
+            "J_squared_ok_after_conj": true,
+            "commutes_ok_after_conj": true,
+            "pass": true
+          },
+          "pass": true
+        },
+        "n_planes_2": {
+          "n_planes": 2,
+          "dim": 4,
+          "J_squared_ok": true,
+          "commutes_ok": true,
+          "base_pass": true,
+          "conjugation": {
+            "note": "symbolic orthogonal Q(phi=phi_2)",
+            "Q_is_orthogonal": true,
+            "J_squared_ok_after_conj": true,
+            "commutes_ok_after_conj": true,
+            "pass": true
+          },
+          "pass": true
+        },
+        "n_planes_3": {
+          "n_planes": 3,
+          "dim": 6,
+          "J_squared_ok": true,
+          "commutes_ok": true,
+          "base_pass": true,
+          "conjugation": {
+            "note": "exact rational orthogonal Q (Pythagorean blocks)",
+            "Q_is_orthogonal": true,
+            "J_squared_ok_after_conj": true,
+            "commutes_ok_after_conj": true,
+            "pass": true
+          },
+          "pass": true
+        },
+        "n_planes_4": {
+          "n_planes": 4,
+          "dim": 8,
+          "J_squared_ok": true,
+          "commutes_ok": true,
+          "base_pass": true,
+          "conjugation": {
+            "note": "exact rational orthogonal Q (Pythagorean blocks)",
+            "Q_is_orthogonal": true,
+            "J_squared_ok_after_conj": true,
+            "commutes_ok_after_conj": true,
+            "pass": true
+          },
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    "L5": {
+      "eigenspace_preservation": {
+        "identity_checked": "A(Jx) - lam(Jx) == (AJ-JA)x + J(Ax-lam x)  (pure algebra, unconditional)",
+        "diff_is_zero": true,
+        "conclusion": "If AJ=JA (commute) and Ax=lam x (eigenvector), both RHS terms vanish, so A(Jx)=lam(Jx): J maps A's real lambda-eigenspace into itself."
+      },
+      "determinant_parity": {
+        "per_d": {
+          "1": {
+            "det(-I_d)": "-1",
+            "(-1)^d": "-1",
+            "matches": true,
+            "negative_for_odd_d": true
+          },
+          "3": {
+            "det(-I_d)": "-1",
+            "(-1)^d": "-1",
+            "matches": true,
+            "negative_for_odd_d": true
+          },
+          "5": {
+            "det(-I_d)": "-1",
+            "(-1)^d": "-1",
+            "matches": true,
+            "negative_for_odd_d": true
+          }
+        },
+        "pass": true,
+        "conclusion": "det(J|_W)^2 = det(-I_d) = (-1)^d < 0 for odd d, but det(J|_W)^2 >= 0 always for real J|_W (a real number squared is never negative) - contradiction, so no real J with J^2=-I exists on an odd-dimensional real subspace."
+      },
+      "pass": true
+    },
+    "L6": {
+      "system": "J*R(th) - R(th)*J = 0  AND  J^2 + I = 0, solved for J's 4 entries (a,b,c,d), symbolic th.",
+      "n_solutions": 2,
+      "solutions": [
+        "[[0, -1], [1, 0]]",
+        "[[0, 1], [-1, 0]]"
+      ],
+      "expected": [
+        "[[0, -1], [1, 0]]",
+        "[[0, 1], [-1, 0]]"
+      ],
+      "matches_expected_exactly": true,
+      "pass": true
+    },
+    "pass": true
+  },
+  "stageB": {
+    "deliverable": "po88_1_schur_proof.md",
+    "untagged_steps": [],
+    "extra_text_tags_beyond_feedback_expectation": [
+      "normal operator spectral theorem / eigenvector orthogonality (u,v orthonormalizable)",
+      "elementary linear algebra: block-diagonal determinant factorization (spectrum = union of block spectra)",
+      "elementary real-number fact: a real number's square is never negative"
+    ],
+    "feedback_anticipated_tags": [
+      "fundamental theorem of algebra",
+      "finite-dimensional induction terminates"
+    ]
+  },
+  "stageC": {
+    "lab88_stage_a_rerun_pass": true,
+    "lab88_stage_b_rerun_pass": true,
+    "instantiates_T1": true,
+    "instantiates_T2": true,
+    "note": "Lab 88 Stage A (symbolic 2-plane, J0^2=-I, commutation) is T1's n=1 base-case instance; Lab 88 Stage B's B2/B3 (odd-dim eigenspace, commutant argument) is T2's d=1 instance.",
+    "pass": true
+  },
+  "verdict": "PASS",
+  "verdict_reason": "All six lemmas machine-checked exactly (symbolic/exact, no floats); the write-up has no untagged step; Stage C regressions against Lab 88's stored checks agree.",
+  "leakage_audit": {
+    "wrote_outside_lab_folder": false,
+    "numeric_pass_in_proof_stage": false,
+    "hypothesis_weakened": false,
+    "posthoc_threshold_change": false,
+    "metrics_hand_edited": false
+  }
+}
