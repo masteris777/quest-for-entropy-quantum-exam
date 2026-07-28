@@ -136,8 +136,13 @@ Say this plainly, because a scorecard reading 18/20 invites the opposite impress
 - **Fields**, second quantization, anything relativistic beyond the CH-15 arena's light cone.
 - **Real momentum.** CH-17 is a recoil *analogue* with a bookkeeping ledger, as above.
 - **Gravity.** Not touched.
-- **Entanglement, as a working feature.** CH-16 is the unfinished row: the certified pair sits
-  exactly on the classical correlation bound. See `tests/test17.md`.
+- **Entanglement, as a working feature.** This is an architectural limit, not an oversight.
+  **Model Two is a one-system machine** — a single state, a single observer, a single fold. The
+  pair used for CH-16 was assembled out of that machinery rather than designed in, and in that
+  assembly each wing's fold sees only its own setting, which is exactly what makes a model
+  Bell-local. The certified pair therefore sits on the classical correlation bound and cannot
+  pass it. Reproducing entanglement is a redesign, and it is parked for a later stage of the
+  programme. See `tests/test17.md`.
 
 The twenty rows say: within these twenty behaviours, at the machine's own precision of about one
 percent, a deterministic clockwork with a physical measurement did what a quantum system does.

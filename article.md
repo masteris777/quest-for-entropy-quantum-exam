@@ -52,7 +52,7 @@ An exam you write for your own machine is worth nothing unless the rules are str
 | D. Two systems at once | 3 | 2 passed, **1 unfinished** |
 | E. Structural theorems | 2 | both proved |
 
-The failure is question 6, and it is the most valuable line in the table. The unfinished one is question 16, and it is the one that decides whether this whole picture is even allowed. Both get their own section below.
+The failure is question 6, and it is the most valuable line in the table. The unfinished one is question 16, and it is unfinished for a reason worth understanding. Both get their own section below.
 
 Now the paper itself. **Every question links to its own file in the companion repository** — the exact setup, the pass mark as it was frozen, the protocol, the controls, the measured numbers, and the caveats. The numbers are all there. They are deliberately not here, because a wall of digits you cannot check is not evidence, it is decoration.
 
@@ -160,27 +160,17 @@ A model that matches everything tells you nothing. This one makes a **prediction
 
 **CH-16. Can a pair of observers inside the machine break the classical correlation bound?**
 
-This one needs a moment, because it is the row that decides whether the whole picture is even allowed.
+Short answer: not with this machine, and we know why.
 
-In 1964 John Bell proved something remarkable. Take any theory where each particle carries its own hidden instructions, and where what you do on one side cannot affect the other side faster than light. Call that **local** hidden variables. Bell showed such a theory can only correlate two distant measurements up to a fixed limit. Run the standard test, add the four correlations into a number called S, and a local theory can never pass S = 2.
+**The machine is built around one system.** One state of three numbers, one observer, one fold. Entanglement needs two. We bolted a pair onto the existing machinery and ran the test properly — but in that arrangement each side's measurement only ever sees its own setting, and an arrangement like that is provably local. For a local arrangement the correlation number cannot pass the classical bound. Which is exactly where it landed, with every control behaving: cut the link between the pair and the correlation vanishes, and nothing measured on one side leaks to the other.
 
-Quantum mechanics goes past it — up to about 2.83. Real experiments go past it too. So local hidden variables are not merely doubted. They are dead, by measurement.
+So the run did not fail. It confirmed a ceiling we had already proved.
 
-That is the first thing anyone asks about a project like this, and the answer has been in every episode: **the hidden machinery here is not local.** The rotors are one global pool. Two observers far apart read from the same clockwork. Bell's theorem does not touch that, and never claimed to — it ruled out the *local* kind and left the global kind standing. Bohm's theory has lived in that gap since 1952.
+One thing has to be said here, because it is the first objection anyone raises. This is **not** Bell's theorem shutting the door on us. Bell ruled out hidden machinery that is *local* — each particle carrying its own private instructions. The machinery here is global: one shared pool, read by everyone. Bell explicitly leaves that case open, and Bohm's theory has lived in the gap since 1952. Getting past the bound needs the substrate itself to respond to both settings at once — a different machine, not a different test.
 
-So the machine is *allowed* to go past 2. The question this row asks is whether it actually does.
+So, plainly: **entanglement is the one big quantum behaviour this machine has not reproduced.** It needs a redesign, we have not built it, and it may not work. We have parked it for later in the quest — it is too interesting to fake and too big to bolt on properly.
 
-We ran it. **It did not.** The number landed on the classical limit, hit almost exactly, with every control clean: cut the link between the pair and the correlation vanishes, and nothing measured on one side leaks to the other.
-
-Now the honest part, in two halves.
-
-**Why it happened is not a mystery.** To run the test cleanly we imposed guardrails from a critical review: each observer's measurement may see only its own setting, and the settings must not depend on the state of the world. Those guardrails are correct — without them you can fake a Bell violation trivially, and an earlier toy of ours did exactly that by quietly letting both settings reach the same place. But with them in force, this particular pair is *mathematically local*, and then the limit of 2 stops being an experimental question. It is a theorem. We spent a run measuring a ceiling we had already proved.
-
-**What it means is that a piece is missing.** For the global machinery to buy anything at all, the substrate's own dynamics have to depend on both settings at once, while each side's local statistics stay flat so that nobody can signal. That is a real and buildable thing — a known construction reaches the full quantum value on one shared bit per trial, and we have measured that separately in its own experiment. What we have not done is build it *inside this machine*, with the fold doing the work.
-
-So the state of play, plainly: **entanglement is the one big quantum behaviour this machine has not reproduced.** Not because Bell forbids it — Bell explicitly leaves this door open — but because we have not built the version that walks through it. It is the largest unfinished piece in the programme. It is designed and not made. And it may not work.
-
-That is why the row says unfinished rather than failed. We would rather print that than round it either way.
+That is why the row says unfinished rather than failed. The full story, with the numbers and the two supporting experiments, is in [its file](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test17.md).
 
 ## The Confession
 
