@@ -15,7 +15,7 @@ python verify_scorecard.py
 ```
 
 No arguments, no network, no install beyond the standard library — it reads the JSON in
-`metrics/` and writes nothing. It re-checks **every number the article quotes** against the
+`metrics/` and writes nothing. It re-checks **every number this piece rests on** against the
 lab's own measurements, recomputing the headline quantities from raw counts wherever raw
 counts exist, and exits non-zero if a single one has drifted.
 
@@ -34,8 +34,8 @@ third-party packages; `requirements.txt` exists only for regenerating the articl
 **This pack certifies the SCORECARD against frozen evidence. It does not re-run the
 experiments.** The twenty rows come from about two dozen laboratory runs spanning Labs 100 to
 158; several take many minutes each and pull in the full research tree. What ships here is what
-those labs *wrote*: their metrics files, byte for byte, plus a checker that holds the article
-to them.
+those labs *wrote*: their metrics files, byte for byte, plus a checker that holds every
+reported number to them.
 
 If you want a machine you can rebuild from scratch in two seconds and watch produce its own
 numbers, that is the previous episode's pack:
@@ -54,8 +54,8 @@ verify_scorecard.py       the checker - the whole point
 scorecard.md              the twenty rows, with links into tests/
 tests/test01..test20.md   one deep dive per question: what was asked, the frozen pass bar,
                           the protocol, the controls, the measured numbers, and the caveats
-metrics/                  the laboratory's frozen output, 25 files, unmodified
-ledger.md                 the five times the referee caught US during this campaign
+metrics/                  the laboratory's frozen output, 27 files, unmodified
+ledger.md                 the five times the referee caught US while running this exam
 expected_output/          the captured output of a real successful run
 article.md, assets/       the article as published, and its figures
 MANIFEST.sha256           checksums of everything above
@@ -119,13 +119,9 @@ are his; the heavy lifting — the math, the physics checks, the code, the sums 
 that honest, the work runs through a harness: **every experiment declares its pass marks before
 it runs**, a mark may be made harder afterwards but never softer, results are challenged by
 independent adversarial AI review, and every mistake caught goes into a **public honesty
-ledger** rather than quietly out of the record. Five entries from this campaign are in
-[`ledger.md`](ledger.md), and they are also in the article. Nothing here comes from a model's
+ledger** rather than quietly out of the record. The five from this exam are in
+[`ledger.md`](ledger.md), with numbers. Nothing here comes from a model's
 memory: every number is printed by code you can run against evidence files you can hash.
-
-## Citing
-
-Archived, citable snapshot: **DOI to-be-minted-at-publication (Zenodo).**
 
 ## License
 

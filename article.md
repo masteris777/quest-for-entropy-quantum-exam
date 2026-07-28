@@ -199,8 +199,7 @@ Test-driven design for physics models is not something we invented — it is sof
 - **[Marlan Scully and Kai Drühl](https://en.wikipedia.org/wiki/Quantum_eraser_experiment)** (1982) — the quantum eraser, question 13.
 - **[Berthold-Georg Englert](https://doi.org/10.1103/PhysRevLett.77.2154)** (1996) — the exact visibility-distinguishability relation, question 14.
 - **[Avshalom Elitzur and Lev Vaidman](https://arxiv.org/abs/hep-th/9305002)** (1993) — interaction-free measurement, question 12.
-- **Sabine Hossenfelder** — her explanation of what the slits themselves are doing is what turned question 17 into a test we could actually run. If you watch one thing linked here, watch that:
-  https://www.youtube.com/watch?v=npc6Mn2CZV8
+- **Sabine Hossenfelder** — her explanation of what the slits themselves are doing is what turned question 17 into a test we could actually run - watch **[video](https://www.youtube.com/watch?v=npc6Mn2CZV8)**.
 - **[Andrew Gleason](https://plato.stanford.edu/entries/qt-gleason/)** (1957) — the theorem that makes question 3 load-bearing rather than decorative.
 - **[Anthony Leggett and Anupam Garg](https://doi.org/10.1103/PhysRevLett.54.857)** (1985) — the tool for asking whether a system has definite values when nobody is looking; question 19 is a wall built out of it.
 
@@ -210,7 +209,7 @@ And the closest neighbours in spirit, as ever: Gerard 't Hooft's [Cellular Autom
 
 Every row on the scorecard has its own file: **[github.com/masteris777/quest-for-entropy-quantum-exam](https://github.com/masteris777/quest-for-entropy-quantum-exam)** — twenty deep dives, `test01.md` through `test20.md`. Each one states **exactly how that test is set up in the toy** — what the "two slits" actually are, where the "speed of light" comes from, what the detector and the apparatus mass are made of — then the pass mark as it was frozen, the protocol, the controls that had to fail, the measured numbers, and the caveats. There is a **[setup guide](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/setup.md)** covering the apparatus in one place, and a **[ledger](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/ledger.md)** of the five times during this exam the machine looked wrong and *we* were wrong — including the one where we nearly published a violation of quantum mechanics that turned out to be our own broken scoring code.
 
-The laboratories' own measurement files ship with it, unedited, and `python verify_scorecard.py` re-reads every number this article rests on and fails loudly if one has drifted. The machine itself rebuilds from scratch in two seconds in the [previous episode's repository](https://github.com/masteris777/quest-for-entropy-the-machine). And you can still poke it in the browser: **[run the machine](https://quest-for-entropy.web.app/the-machine)**, or **[watch the fold kill the stripes](https://quest-for-entropy.web.app/stripes-die)** — that one is question 8, live. Archived, citable snapshot: DOI to-be-minted-at-publication (Zenodo).
+The laboratories' own measurement files ship with it, unedited, and `python verify_scorecard.py` re-reads every number this article rests on and fails loudly if one has drifted. The machine itself rebuilds from scratch in two seconds in the [previous episode's repository](https://github.com/masteris777/quest-for-entropy-the-machine). And you can still poke it in the browser: **[run the machine](https://quest-for-entropy.web.app/the-machine)**, or **[watch the fold kill the stripes](https://quest-for-entropy.web.app/stripes-die)** — that one is question 8, live.
 
 ## How this was made
 
