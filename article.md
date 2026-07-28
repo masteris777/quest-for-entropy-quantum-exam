@@ -44,13 +44,11 @@ An exam you write for your own machine is worth nothing unless the rules are str
 
 **Eighteen passed. One failed. One we could not finish.**
 
-| Section | Questions | Result |
-|---|---|---|
-| A. Static statistics | 4 | all passed |
-| B. Interference | 4 | 3 passed, **1 failed** |
-| C. Measurement dynamics | 7 | all passed |
-| D. Two systems at once | 3 | 2 passed, **1 unfinished** |
-| E. Structural theorems | 2 | both proved |
+**A. Static statistics** — 4 questions, all passed.
+**B. Interference** — 4 questions, 3 passed, **1 failed**.
+**C. Measurement dynamics** — 7 questions, all passed.
+**D. Two systems at once** — 3 questions, 2 passed, **1 unfinished**.
+**E. Structural theorems** — 2 questions, both machine-checked arguments rather than experiments.
 
 The failure is question 6, and it is the most valuable line in the table. The unfinished one is question 16, and it is unfinished for a reason worth understanding. Both get their own section below.
 
