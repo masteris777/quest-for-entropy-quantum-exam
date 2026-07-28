@@ -10,6 +10,12 @@ Do the frequencies the observer counts match the probabilities quantum mechanics
 
 This is the floor of the whole exercise. The machine never squares anything: it compares three lengths, takes the longest, and writes down one integer. The squared law is not installed anywhere. So if the counted frequencies land on the quantum values, they landed there by mechanism, not by construction.
 
+## How this is set up in the toy
+
+**Arena: Model Two**, the rotor machine of episode 2 — a pool of 96 free-running rotors, a three-component complex state, a fixed observer frame, and the fold. One tick = one turn of the state under the fixed operator U_S. A measurement is: project the state onto the three frame directions, take the largest, record its index, then rebuild the state from six fresh pool readings. Outcomes are obtained by `argmax` and tallied by `bincount` — no probability is ever computed inside the machine. The Born values appear only afterwards, as the reference line to compare against.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Run the certified fold for tens of thousands of ticks in a fixed observer frame. Tally how often each of the three outcomes is recorded. Compare the tallies against the Born values for the same states and frame. The quantum formula is used only to draw the reference; it never enters the machine.

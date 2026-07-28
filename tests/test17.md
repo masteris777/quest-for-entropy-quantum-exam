@@ -10,6 +10,12 @@ Can a pair of observers living inside the machine produce correlations that beat
 
 This is Bell's test run from the inside. Quantum mechanics reaches 2.83. A global hidden-variable world is ALLOWED to do this — Bell only forbids the local kind — so the row is a genuine open question about whether the construction can reach it.
 
+## How this is set up in the toy
+
+Back to Model Two. The pair is prepared from a substrate channel the fold does not use: one channel value fixes a shared orientation `lam`, wing A gets a share at angle `lam` and wing B at `lam + pi/2` — a singlet analogue — and this happens **before any setting is chosen**. Each wing has two settings and folds under its own setting only. Four arms are run: the shared-substrate pair, a severed pair (wing B rebuilt from a disjoint pool), and both again with the settings swapped as an intervention check. 200,000 rounds per arm. Two supporting experiments ship with this deep dive: one measuring what local pseudorandomness can do (nothing), and one measuring what a shared global node can do (everything, on one bit).
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Prepare a shared pair from a fold-unused substrate channel BEFORE any setting is chosen. Give each wing two settings. Fold each wing under its own setting only. Count the four correlators E(a,b) and combine into S. Run four arms: the substrate pair, a severed pair (independent pools), and both with the settings swapped.
@@ -44,6 +50,14 @@ Every value below is read live out of the frozen metrics files in `metrics/` by
 | cross-wing setting channel | `false` | Lab 150 |
 | verdict | UNBUILT-AT-BUDGET | Lab 150 |
 | verdict reason | S_substrate = 2.0005 +/- 0.0077 does not exceed 2 + 3*sigma_S = 2.0232: the preparation cannot produce cross-wing correlation sufficient for S > 2 under the frozen guardrails. Obstruction diagnosis in lab-report-150.md (declared analytic expectation D11: guardrails 2+7 + deterministic fold => LHV model => E[S] <= 2 by CHSH/Bell; the counted value sits at the sawtooth LHV boundary reference 2). | Lab 150 |
+| -- calibration: a deterministic local strategy reaches | `2` | Lab 77 |
+| -- calibration: quantum singlet reaches | `2.82942` | Lab 77 |
+| -- calibration: a no-signalling 'PR box' would reach | `4` | Lab 77 |
+| -- best S per local pseudorandom family (Lab 77) | `lcg = 2.00332; logistic_chaos = 2.00302; crypto_hash = 2.00262; os_crypto = 2.00233; shared_lambda_response = 2.00076` | Lab 77 |
+| -- spread across all five families | `0.00099` | Lab 77 |
+| -- a shared global node reaches (Lab 78) | `2.82768` | Lab 78 |
+| -- ... on this many substrate bits per trial | `1` | Lab 78 |
+| -- ... with signalling leakage per side | `alice = 0.000464; bob = 0.000545` | Lab 78 |
 
 ### Recomputed from raw counts
 
@@ -57,9 +71,13 @@ Every value below is read live out of the frozen metrics files in `metrics/` by
 
 The row reads PARTIAL, not FAIL, and the distinction is a theorem rather than a preference. Under the guardrails imposed by adversarial review — own-setting-only fold contexts, world-state-independent settings — the certified pair is Bell-factorized, and for factorized models S <= 2 is PROVED. The run therefore measured a ceiling that had already been derived. That it saturates the ceiling exactly is the informative part. The completion path (joint-setting-dependent substrate dynamics with counted marginal invariance) is designed but NOT built, and it is gated behind user and critique review because it touches the model's foundations. It may not work.
 
+**The two supporting experiments in the table are worth reading together.** Lab 77 measured what LOCAL randomness can do: five families from a linear congruential generator up to SHA-256, a million trials each, all pinned at S = 2.003 with a spread of 0.001. Complexity buys nothing — a cryptographic hash is exactly as unable to violate Bell as a toy generator. Lab 78 measured what a SHARED GLOBAL node can do: the full quantum value, on exactly one shared bit per trial, with signalling leakage down at 0.0005. So the resource that would close CH-16 is known, cheap, and already measured in isolation. What has not been done is making the fold itself supply it inside Model Two. That is the gap, stated as precisely as we can state it.
+
 ## Evidence files
 
 - `metrics/metrics_150.json` — Lab 150 (`150_embedded_chsh/metrics_150.json` in the research tree)
+- `metrics/metrics_77.json` — Lab 77 (`77_local_prng_bell_ceiling/metrics_77.json` in the research tree)
+- `metrics/metrics_78.json` — Lab 78 (`78_two_layer_shared_node_bell/metrics_78.json` in the research tree)
 
 ## What the article says
 

@@ -10,6 +10,12 @@ When the machine is pointed at a two-path setup and the phase is swept, do the c
 
 Lots of mechanisms wiggle. Very few wiggle as a pure first harmonic with the right amplitude. Purity is the part that is hard to fake: overtones are the fingerprint of a construction that is imitating the shape rather than producing it.
 
+## How this is set up in the toy
+
+**There is no space in this experiment, and that matters.** The 'two paths' are two directions of the observer's own frame, u_A and u_B. The 'particle' is the state. The target is the two-path superposition `normalize(0.8*u_A + 0.6*e^(i*phi)*u_B)`, and the **swept relative phase `phi` plays the role of position on the screen** — 24 points around the circle. The 'screen' is the counted outcome frequency at each phi. So the fringes are real interference between two components of a state, but they are not a picture of light landing on a wall. The asymmetric weights 0.8 and 0.6 are declared generic constants, chosen so the dark minima stay bounded away from zero and the null-depth ratio is well-conditioned. 200,000 counted draws per phase point.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Sweep the two-path phase over a 24-point grid, count outcomes at each phase, fit the first harmonic, and compare both the fitted curve and its overtone content against the analytic Born curves. Repeated across frames, two target-weight profiles, and a second world.

@@ -6,11 +6,11 @@
 <!-- The frozen conformance scorecard, suite v1.14. Eighteen passed, one failed, one unfinished. -->
 
 
-Last time I took the machine apart. A pool of ninety-six rotors turning at speeds that never line up. A state of three numbers. And one move — **the fold** — where the observer compares three lengths, writes down which one won, and rewrites the state from six fresh rotor readings.
+Last time we took the machine apart. A pool of ninety-six rotors turning at speeds that never line up. A state of three numbers. And one move — **the fold** — where the observer compares three lengths, writes down which one won, and rewrites the state from six fresh rotor readings.
 
 No dice. No collapse rule. No quantum formula anywhere inside it.
 
-I said it comes out looking quantum. That is a big claim, and a claim like that is worth nothing until someone writes down what would prove it wrong. So we did. We wrote a twenty-question exam, fixed every pass mark before the machine ran, and made it sit the paper.
+We said it comes out looking quantum. That is a big claim, and a claim like that is worth nothing until someone writes down what would prove it wrong. So we did. We wrote a twenty-question exam, fixed every pass mark before the machine ran, and made it sit the paper.
 
 Here is the whole result, question by question. Including the one it failed.
 
@@ -20,7 +20,7 @@ What would it even mean for a machine to "be quantum"?
 
 Not that it uses the quantum formula — this one never does. Not that it feels mysterious. The only test that means anything is behavioural: **put it through the things quantum systems do, and see if it does them too.**
 
-So the question became a list. Twenty items. Not a vague vibe about weirdness, but twenty specific, countable behaviours with a number attached to each: Born statistics, interference with the right shape, the decoherence law, repeatability, delayed choice, the quantum eraser, no-signalling, the trade-off between knowing the path and seeing the stripes.
+So the question became a list. Twenty items. Not a vague feeling about weirdness, but twenty specific, countable behaviours with a number attached to each: Born statistics, interference with the right shape, the decoherence law, repeatability, delayed choice, the quantum eraser, no-signalling, the trade-off between knowing the path and seeing the stripes.
 
 That list is the exam. It is the thing that can fail.
 
@@ -30,15 +30,15 @@ An exam you write for your own machine is worth nothing unless the rules are str
 
 **1. The exam was frozen first.** Every question and every pass mark was written down and version-stamped before the machine was pointed at it. The file has a changelog. You can read it.
 
-**2. A mark may get harder, never softer.** If we found a bar too easy, we could tighten it. We could never loosen one because the machine missed it. One bar did change mid-campaign — question 17 — and I tell that story below, because the honest thing is that it changed *before* the first counting run, and it got harder.
+**2. A mark may get harder, never softer.** If we found a bar too easy, we could tighten it. We could never loosen one because the machine missed it. One bar did change mid-exam — question 17 — and it changed *before* that test's first counting run, and it got harder. It is dated and on the record.
 
-**3. The recipe was frozen too.** The machine has one setting — the lean, the 2.5-to-1 from last episode. It was tuned once, against question 1 only. Then it was locked. Nothing was re-tuned between questions. A machine that gets re-adjusted for each question is not passing an exam, it is being coached.
+**3. The recipe was frozen too.** The machine has one setting — the lean, the two-and-a-half-to-one from last episode. It was tuned once, against question 1 only. Then it was locked. Nothing was re-tuned between questions. A machine that gets re-adjusted for each question is not passing an exam, it is being coached.
 
 **4. Every probability is counted, never computed.** The machine counts events. The quantum formula appears only afterwards, as a line on the chart to compare against. If the formula were inside the machine, the whole exercise would be a circle.
 
 **5. Every question needs a control that fails.** A test that everything passes is not a test. So each question came with a deliberately broken version — a scrambled frame, a severed link, a fold switched off — and the broken version had to fail. If the control passed too, the question was measuring nothing and we threw it out.
 
-**6. Then we did it all again on a different machine.** Nine of the questions were re-run on fresh frames, fresh seeds and a second substrate world, with the bars copied over word for word. That is the part I trust most.
+**6. Then we did it all again on a different machine.** Nine of the questions were re-run on fresh frames, fresh seeds and a second substrate world, with the bars copied over word for word. That is the part we trust most.
 
 ## The run
 
@@ -52,70 +52,76 @@ An exam you write for your own machine is worth nothing unless the rules are str
 | D. Two systems at once | 3 | 2 passed, **1 unfinished** |
 | E. Structural theorems | 2 | both proved |
 
-The failure is question 6, and it is the most valuable line in the table. The unfinished one is question 16, and it is unfinished in a specific way that I will show you rather than hide.
+The failure is question 6, and it is the most valuable line in the table. The unfinished one is question 16, and it is the one that decides whether this whole picture is even allowed. Both get their own section below.
 
-Now the whole paper.
+Now the paper itself. **Every question links to its own file in the companion repository** — the exact setup, the pass mark as it was frozen, the protocol, the controls, the measured numbers, and the caveats. The numbers are all there. They are deliberately not here, because a wall of digits you cannot check is not evidence, it is decoration.
 
 ## Part A — Does it get the numbers right?
 
-**CH-01 · Born statistics.** The foundation. Quantum mechanics says the chance of an outcome is the squared length of its arrow. The machine never squares anything — it compares three lengths and keeps the winner. So: count tens of thousands of events and see where the frequencies land. They land on the quantum values, off by 0.007 to 0.015. Call it about one percent. Hold on to that number — the whole rest of this piece lives at that scale. **PASS.**
+**[CH-01](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test01.md) · Born statistics.** The foundation. Quantum mechanics says the chance of an outcome is the squared length of its arrow. The machine never squares anything — it compares three lengths and keeps the winner. So: count tens of thousands of events and see where the frequencies land. They land on the quantum values, at the machine's own precision of roughly one percent. Hold on to that one percent; the whole rest of this piece lives at that scale. **PASS.**
 
-**CH-02 · Any frame.** A worry you should have: maybe we found one lucky set of questions for the observer to ask. So we turned the frame. Fresh directions, and then a fresh substrate world underneath. Same result. Not one lucky frame — the behaviour, not the setup. **PASS.**
+**[CH-02](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test02.md) · Any frame.** A worry you should have: maybe we found one lucky set of questions for the observer to ask. So we turned the frame. Fresh directions, and then a fresh substrate world underneath. Same result. Not one lucky frame — the behaviour, not the setup. **PASS.**
 
-**CH-03 · No contextuality.** In quantum mechanics, the answer to a question does not depend on which other questions you ask alongside it. That sounds obvious. It is not — it is a strong constraint, and it is the hinge Gleason's theorem turns on. We asked the same question inside many different groupings and measured the drift: 0.0156, at the machine's own one percent. The scrambled control drifted 10.6 times worse. **PASS.**
+**[CH-03](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test03.md) · No contextuality.** In quantum mechanics, the answer to a question does not depend on which other questions you ask alongside it. That sounds obvious. It is not — it is a strong constraint, and it is the hinge that forces the squared law. We asked the same question inside many different groupings and measured the drift. It stayed at the machine's one percent while the scrambled control drifted ten times worse. **PASS.**
 
-**CH-04 · Mixtures and superpositions.** Two setups. Flip a coin to pick one, and the statistics should be the plain average of the two — nothing extra. Combine them *coherently* instead, and an extra term must appear, of a size the theory pins down. The machine does both: flat on the coin flip to 0.002, and the extra term shows up at the predicted size. This is the difference between "don't know which" and "both at once", and the machine keeps them apart. **PASS.**
+**[CH-04](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test04.md) · Mixtures and superpositions.** Two setups. Flip a coin to pick one, and the statistics should be the plain average of the two — nothing extra. Combine them *coherently* instead, and an extra term must appear, of a size the theory pins down. The machine does both. This is the difference between "don't know which" and "both at once", and it keeps them apart. **PASS.**
 
 ## Part B — Does it interfere?
 
-**CH-05 · Fringes.** Point the machine at a two-path setup, sweep the phase, count. The counts trace a cosine — the real interference curve, RMS 0.015 to 0.047 away from the quantum one. And the shape is clean: no false overtones above the noise. Plenty of things can wiggle. Very few wiggle as a pure first harmonic. **PASS.**
+**[CH-05](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test05.md) · Fringes.** Point the machine at a two-path setup, sweep the phase, count. The counts trace a cosine — the real interference curve. And the shape is clean: no false overtones above the noise. Plenty of things can wiggle. Very few wiggle as a pure first harmonic. **PASS.**
 
-**CH-06 · Deep nulls.** *The one it failed.* Full section below.
+**[CH-06](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test06.md) · Deep nulls.** *The one it failed.* Full section below.
 
-**CH-07 · Decoherence.** Add phase noise and interference should fade — not any old way, but along one specific curve. Turn the noise up and the machine's visibility follows that curve step for step, never more than 0.023 away from it. It loses coherence by the right law, not just in the right direction. **PASS.**
+**[CH-07](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test07.md) · Decoherence.** Add phase noise and interference should fade — not any old way, but along one specific curve. Turn the noise up and the machine's visibility follows that curve step for step. It loses coherence by the right law, not just in the right direction. **PASS.**
 
-**CH-08 · The which-path sum rule.** Mark which path was taken, and interference must die completely: the two paths just add, no cross term. With full marking the machine's fringe visibility falls to 0.0020 while the path information reads 1.0000 — total knowledge, no stripes. **PASS.**
+**[CH-08](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test08.md) · The which-path sum rule.** Mark which path was taken, and interference must die completely: the two paths just add, no cross term. Under full marking the machine's fringes collapse to the residual floor while the path information reads exactly 1 — total knowledge, no stripes. This is the one the browser demo shows live. **PASS.**
 
 ## Part C — Does measurement behave?
 
-This is the section I care about most. Statistics can be faked by many things. *Dynamics* — what happens to a system after you look at it — is much harder to fake, and it is where our earlier attempts died.
+This is the section we care about most. Statistics can be faked by many things. *Dynamics* — what happens to a system after you look at it — is much harder to fake, and it is where our earlier attempts died.
 
-**CH-09 · Repeatability.** Measure, then measure again immediately. Quantum mechanics says: certainty, the same answer. Not "usually" — always. The machine repeated 177,000 times out of 177,000, across two different worlds. Exactly 1.0. And nobody wrote a collapse rule; it falls out of the fact that the rewritten state leans toward what was just recorded. **PASS.**
+**[CH-09](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test09.md) · Repeatability.** Measure, then measure again immediately. Quantum mechanics says: certainty, the same answer. Not "usually" — always. The machine repeated the answer every single time, in two different worlds, without a single exception. And nobody wrote a collapse rule anywhere; it falls out of the fact that the rewritten state leans toward what was just recorded. **PASS.**
 
-**CH-09b · The collapse chain.** Harder version. Do not just re-measure — measure, let one tick pass, measure again, and check the *whole table* of transitions between the two, off-diagonal entries included. Quantum mechanics gives an exact table. The machine's counted table matches it: in every cell the worst entry stayed inside the bar we had set beforehand, and in the fresh second world the worst entry was off by 0.0060. This is the one that convinced me. Repeatability is one number and a lucky machine might hit it. A nine-entry table is not luck. **PASS.**
+**[CH-09b](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test10.md) · The collapse chain.** Harder version. Do not just re-measure — measure, let one tick pass, measure again, and check the *whole table* of transitions between the two, off-diagonal entries included. Quantum mechanics gives an exact table. The machine's counted table matches it, every entry inside the bar we had set beforehand. This is the one that convinced us. Repeatability is a single number and a lucky machine might hit it. A nine-entry table is not luck. **PASS.**
 
-**CH-10 · Blurring back out.** After a measurement the answer is sharp. Wait without measuring and it should blur again — down a specific curve, with a dip and a partial revival. The machine follows that curve, revival included: RMS 0.018 or better against the free-evolution prediction. And against the control — the one that fakes it by measuring over and over, freezing the value instead of letting it move — the machine sits at least six times further away, in every cell we ran. Freezing a value and letting a value evolve look different, and the machine does the second one. **PASS.**
+**[CH-10](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test11.md) · Blurring back out.** After a measurement the answer is sharp. Wait without measuring and it should blur again — down a specific curve, with a dip and a partial revival. The machine follows that curve, revival included. And it sits far closer to that curve than to the control that fakes it by measuring over and over, freezing the value instead of letting it move. Freezing and evolving look different, and the machine does the second one. **PASS.**
 
-**CH-11 · Delayed choice.** Wheeler's question. Decide whether to check the path *after* the particle is already on its way. Quantum mechanics says the fringes depend on **whether** you check, never on **when**. So we slid the check up and down the timeline. Every marked run gave visibility 0.0076 or below, at every insertion point — while the same setup with nothing marking the path shows fringes at 0.99. Flat. No dependence on timing at all, and nothing here travels backwards in time. **PASS.**
+**[CH-11](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test12.md) · Delayed choice.** Decide whether to check the path *after* the particle is already on its way. Quantum mechanics says the fringes depend on **whether** you check, never on **when**. So we slid the check up and down the timeline, from before the flight begins to the last instant before it ends. The fringes died the same amount every time — flat, no dependence on timing at all. Nothing here travels backwards in time. **PASS.**
 
-**CH-12 · The detector that never fired.** The strangest one on the paper. Put a detector on one path. It does not fire — so the particle went the other way. Nothing touched it. And yet the fringes are gone, because the *possibility* of detection was enough. Learning something by not-seeing it still costs you the interference. The machine does this: fringe visibility on the non-firing runs sits at 0.0058, flat at the floor. **PASS.**
+**[CH-12](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test13.md) · The detector that never fired.** The strangest one on the paper. Put a detector on one path. It does not fire — so the particle went the other way. Nothing touched it. And yet the fringes are gone, because the *possibility* of detection was enough. Learning something by not-seeing it still costs you the interference. The machine does this. **PASS.**
 
-**CH-13 · The quantum eraser.** Mark the path, so the fringes die. Then erase the marker and sort the records into two piles by what the erased marker said. Fringes come back in each pile — and the two piles are exactly out of step with each other, so pooling them cancels back to nothing.
+**[CH-13](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test14.md) · The quantum eraser.** Mark the path, so the fringes die. Then erase the marker and sort the records into two piles by what the erased marker said. Fringes come back in each pile — and the two piles are exactly out of step with each other, so pooling them cancels back to nothing.
 
 ![the eraser](assets/eraser_fringes.png)
-<!-- Lab 154, counted events. Two subensembles at full visibility, half a turn apart; everything together, flat. -->
+<!-- Counted events. Two subensembles at full visibility, half a turn apart; everything together, flat. -->
 
-The machine splits the records 49.97 to 50.03, brings both piles back at visibility 0.955 and 0.952, and puts them a phase gap of 3.1399 apart — that is pi, missed by 0.0017. Pooled together they flatten to 0.0002. It all reproduced later on fresh seeds. Nothing was un-measured here. The information was reorganised, and that is all the eraser ever was. **PASS.**
+The machine splits the records evenly, brings both piles back at nearly full visibility, and puts them almost exactly half a turn apart. Pooled together they flatten. Nothing was un-measured here. The information was reorganised, and that is all the eraser ever was. **PASS.**
 
-**CH-14 · The trade-off.** Path knowledge and fringe visibility cannot both be high — squared and added, they must not pass 1. The machine's counted values reach 1.000004 and no further, and it saturates the bound at full coupling, which is the interesting part: it does not sit safely below, it rides the edge exactly where quantum mechanics rides it. **PASS.** (This one also caught us out badly. See below.)
+**[CH-14](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test15.md) · The trade-off.** Path knowledge and fringe visibility cannot both be high — squared and added, they must not pass 1. The machine's counted values reach that limit and go no further, and they saturate it at full coupling, which is the interesting part: it does not sit safely below, it rides the edge exactly where quantum mechanics rides it. This row also came within one check of us publishing something false. That story is in the ledger. **PASS.**
 
 ## Part D — Does it work with two systems?
 
-**CH-15 · No signalling.** Two distant systems. Measuring one must not change what the other one sees — not "on average", not "approximately". We compared the remote record bit by bit and it stayed identical until the exact moment a signal travelling at the world's own light speed could have arrived. Four seeds out of four, plus a proof. **PASS.**
+**[CH-15](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test16.md) · No signalling.** Two distant observers. Measuring one must not change what the other one sees — not "on average", not "approximately". This is the row where the toy needs an actual notion of *distance* and *light speed*, and it has one: the test runs in a second, simpler world built as a line of cells where each cell only ever talks to its neighbours. That makes the speed limit exactly one cell per tick, by construction. We poked the world next to one observer and compared the far observer's record bit by bit. It stayed identical until the exact tick a signal could have arrived — while the near observer, inside the cone, noticed immediately. That second half matters: it proves the poke was real. **PASS.**
 
-**CH-16 · CHSH.** *The one we could not finish.* Full section below.
+**[CH-16](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test17.md) · CHSH.** *The one we could not finish.* Full section below.
 
-**CH-17 · Recoil.** Sabine Hossenfelder's version of the double slit: the wall the slits are cut in gets a kick when a particle goes past, and that kick carries which-slit information. A light wall records the kick and the fringes die. A heavy wall barely moves, learns nothing, and the fringes survive. The machine reproduces both dials — the exchange ledger is exact every run, and as the apparatus gets heavier the recoverable path information falls to 0.0001 while the visibility holds. **PASS**, with one anomaly I will not paper over: at the extreme zero-mass end the visibility runs 0.017 higher than the reference curve, inside the bar but consistently, and it replicated on fresh seeds. We named it and carried it forward rather than rounding it away.
+**[CH-17](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test18.md) · Recoil.** A neat way to see the double slit: the wall the slits are cut in gets a kick when a particle goes past, and that kick carries which-slit information. A light wall records the kick and the fringes die. A heavy wall barely moves, learns nothing, and the fringes survive. The machine reproduces both dials — the kick is booked exactly every run, and as the apparatus gets heavier the recoverable path information falls away to nothing while the visibility holds. **PASS**, with one anomaly we will not paper over: at the extreme light-apparatus end the visibility runs slightly above the reference curve, inside the bar but consistently, and it replicated on fresh seeds. We named it and carried it forward rather than rounding it away.
 
-## Part E — Two things that are proved, not measured
+## Part E — Two things that are argued, not measured
 
-Two rows are not experiments. They are theorems, machine-checked line by line.
+Two rows are not experiments. They are proofs, checked step by step by machine.
 
-**CH-18 · The dashboard is forced to be complex.** Physics students always ask why quantum mechanics needs imaginary numbers. This is a partial answer, at least for our observer: given a real, information-preserving view of a turning world with no standing still, the structure of that view *forces* a complex-unitary description. Not chosen for convenience. Forced by the geometry. **PROVED.**
+**[CH-18](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test19.md) · The observer's view is forced to be complex.** Physics students always ask why quantum mechanics needs imaginary numbers. This is a partial answer, and only for this kind of observer: given a real, information-preserving view of a steadily turning world with nothing standing still, the structure of that view forces a complex-unitary description. Not chosen for convenience — forced by the geometry.
 
-**CH-19 · Watching is not enough.** This one is the wall that killed two years of ideas, and it is worth more than any pass on the list. Take any deterministic world. Watch it passively, through a fixed set of questions, changing nothing. Then the outcomes you record can always be arranged into one consistent joint story — which means they can never break the classical bounds that quantum mechanics breaks. **Passive observation of a deterministic world cannot fake collapse. Ever. It is a theorem.**
+We should be careful about how much weight this carries. Every step is machine-checked, and there is a scope note on the record: when two rotation rates coincide the uniqueness breaks, and we have an explicit counterexample. More importantly, **the theorem is about a different object than the machine's own three-number state**, which is written complex by hand in the source. We do not lean on it, and this article does not use it to claim the machine invented complex numbers. It did not. **PASS.**
 
-We ran into it as a measurement long before we proved it: a passively watched world scored 0.99963 against a classical ceiling of 1. Riding the limit, never crossing.
+**[CH-19](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/tests/test20.md) · Watching is not enough.** This one is the wall that killed many of our earlier ideas, and it is worth more than any pass on the list.
+
+Take a deterministic world. Watch it passively, through a fixed set of questions, changing nothing. Then the outcomes you record can always be arranged into one consistent joint story — and something that admits a consistent joint story can never break the classical bounds that quantum mechanics breaks.
+
+**So passive observation of a deterministic world cannot fake collapse.** The argument is machine-checked and we are convinced by it. Its scope is exactly as stated, and no wider: passive observation, through a *fixed* partition. It says nothing about what an active, state-rewriting observer can do — which is precisely the gap the fold walks through, deliberately.
+
+We met this as a measurement before we had the argument: a passively watched world came out riding the classical limit and never crossing it. **PASS.**
 
 That is why the fold exists. Not because it was elegant — because everything gentler was ruled out.
 
@@ -125,28 +131,28 @@ That is why the fold exists. Not because it was elegant — because everything g
 
 In an interference pattern the dark bands come from two contributions cancelling. Quantum mechanics allows perfect cancellation: line it up exactly and the darkness is *total*. Zero. And you can approach that zero as closely as you want.
 
-Our machine cannot. Push toward a perfect null and the contrast stops falling. It flattens out at about 1.2 percent and stays there. There is always a little light left in the dark.
+Our machine cannot. Push toward a perfect null and the contrast stops falling. It flattens out at a bit above one percent and stays there. There is always a little light left in the dark.
 
-**Where does that floor come from?** From the same place everything else comes from: the fold rewrites the state from rotor readings, and those readings carry a small, structured leftover. That leftover is roughly the same size as the one percent we met back in question 1. The floor is not a bug we could patch. It is the price of the mechanism.
+**Where does that floor come from?** From the same place everything else comes from: the fold rewrites the state from rotor readings, and those readings carry a small, structured leftover. That leftover is about the same size as the one percent we met back in question 1. The floor is not a bug we could patch. It is the price of the mechanism.
 
-So we spent a campaign trying to get under it. Three routes:
+So we spent time trying to get under it. Three routes:
 
 **Change the reservoir.** Different pool, different statistics. The floor stayed.
 
-**Change the coordinates.** If the leftover were an artifact of how we set things up, a symmetry transformation should smear it away. We twirled the whole system through a 24-element symmetry group. The leftover came back at 0.92 of its original size — essentially untouched. It is not a bookkeeping artifact.
+**Change the coordinates.** If the leftover were an artifact of how we set things up, a symmetry transformation should smear it away. We averaged the whole system over a group of twenty-four symmetries. The leftover came back essentially untouched. It is not a bookkeeping artifact.
 
-**Change the architecture.** The last idea: fold in stages instead of all at once. We built it, certified it, and ran the same ladder — and it failed from **the opposite side.** Below a certain depth the hierarchical machine does not floor out. It snaps to exactly zero: 0 events out of 500,000 where quantum mechanics predicts about 50. Not too much light in the dark. *No* light at all, where there should be a little.
+**Change the architecture.** The last idea: fold in stages instead of all at once. We built it, certified it, and ran the same ladder — and it failed from **the opposite side.** Below a certain depth the staged machine does not floor out. It snaps to exactly zero: not one single event in half a million, where quantum mechanics predicts a small but definite handful. Not too much light in the dark. *No* light at all, where there should be a little.
 
 ![cliff or floor](assets/cliff_or_floor.png)
-<!-- Lab 158b, counted events. The dashed line is what quantum mechanics does. Neither machine can follow it. -->
+<!-- Counted events. The dashed line is what quantum mechanics does. Neither machine can follow it. -->
 
 So the family has two shapes, and neither one is quantum:
 
 > **Rich folds floor. Sharp folds cut off. Quantum mechanics does neither.**
 
-We call it the **cliff-or-floor dichotomy**, and I want to be careful about its status: it is measured on both sides and named as a conjecture. It is not proved over every possible deterministic measurement machine. Proving it — or finding the machine that escapes it — is the open problem this whole programme now points at.
+We call it the **cliff-or-floor dichotomy**, and we want to be careful about its status: it is measured on both sides and named as a conjecture. It is not proved over every possible deterministic measurement machine. Proving it — or finding the machine that escapes it — is the open problem this whole programme now points at.
 
-Here is why I am glad this row says FAIL.
+Here is why we are glad this row says FAIL.
 
 A model that matches everything tells you nothing. This one makes a **prediction that could kill it**: if the world were a machine of this family, interference could not be made arbitrarily dark. It would bottom out around a percent, or drop off a cliff to nothing. Real quantum mechanics does neither, and experiments can look. The failure is the only place in twenty questions where this thing is properly falsifiable, and that makes it the best row on the paper.
 
@@ -154,63 +160,70 @@ A model that matches everything tells you nothing. This one makes a **prediction
 
 **CH-16. Can a pair of observers inside the machine break the classical correlation bound?**
 
-This is Bell's test, run from the inside. Two observers, two settings each, four correlations added up into a number called S. Any classical local story is stuck at S = 2. Quantum mechanics reaches 2.83. We wanted our embedded pair above 2.5.
+This one needs a moment, because it is the row that decides whether the whole picture is even allowed.
 
-We got **S = 2.0005, plus or minus 0.0077.**
+In 1964 John Bell proved something remarkable. Take any theory where each particle carries its own hidden instructions, and where what you do on one side cannot affect the other side faster than light. Call that **local** hidden variables. Bell showed such a theory can only correlate two distant measurements up to a fixed limit. Run the standard test, add the four correlations into a number called S, and a local theory can never pass S = 2.
 
-Look closely at that number. It is not a failure to correlate — it is the classical ceiling, hit exactly. All the controls behave: cut the link between the pair and it drops to 0.002, and every no-signalling and swap-intervention check came back clean, the largest at 0.006 against a bar of 0.019. The machine extracts every last drop a local story allows, and not one drop more.
+Quantum mechanics goes past it — up to about 2.83. Real experiments go past it too. So local hidden variables are not merely doubted. They are dead, by measurement.
 
-And the reason is not mysterious, which is why this row says *unfinished* rather than *failed*. To run the test cleanly we imposed guardrails from a critical review: each observer's fold may see only its own setting, and the settings must not depend on the world's state. Those guardrails are correct — without them you can fake a Bell violation trivially, and our own earlier one-bit toy did exactly that by quietly routing both settings into the same place. But with them in force, the pair is mathematically factorised, and then S at most 2 is a **theorem**. We spent the run measuring a ceiling we had already proved.
+That is the first thing anyone asks about a project like this, and the answer has been in every episode: **the hidden machinery here is not local.** The rotors are one global pool. Two observers far apart read from the same clockwork. Bell's theorem does not touch that, and never claimed to — it ruled out the *local* kind and left the global kind standing. Bohm's theory has lived in that gap since 1952.
 
-So the honest report is: this configuration cannot violate Bell, we know why, and the number confirms it precisely. Going further needs a substrate whose dynamics depend on both settings at once while the local statistics stay flat. That is allowed by our rules — the hidden machinery here is global, which is exactly how it lives with Bell's theorem. But it touches the foundations of the model, so it is gated behind design review, not something to bolt on for a nicer scorecard.
+So the machine is *allowed* to go past 2. The question this row asks is whether it actually does.
 
-Eighteen out of twenty, with one honest cliffhanger. I would rather print that than a twenty.
+We ran it. **It did not.** The number landed on the classical limit, hit almost exactly, with every control clean: cut the link between the pair and the correlation vanishes, and nothing measured on one side leaks to the other.
 
-## Where the referee caught us
+Now the honest part, in two halves.
 
-Five times during this exam the machine looked wrong and *we* were wrong. I am listing them because a scorecard without them is not evidence, it is advertising.
+**Why it happened is not a mystery.** To run the test cleanly we imposed guardrails from a critical review: each observer's measurement may see only its own setting, and the settings must not depend on the state of the world. Those guardrails are correct — without them you can fake a Bell violation trivially, and an earlier toy of ours did exactly that by quietly letting both settings reach the same place. But with them in force, this particular pair is *mathematically local*, and then the limit of 2 stops being an experimental question. It is a theorem. We spent a run measuring a ceiling we had already proved.
 
-**1. We tested the wrong thing.** Question 10 failed on its first run. Before recording the failure we re-read the protocol and found we had compared against the wrong reference curve. The test was void — not the machine. Corrected and re-run, it passed.
+**What it means is that a piece is missing.** For the global machinery to buy anything at all, the substrate's own dynamics have to depend on both settings at once, while each side's local statistics stay flat so that nobody can signal. That is a real and buildable thing — a known construction reaches the full quantum value on one shared bit per trial, and we have measured that separately in its own experiment. What we have not done is build it *inside this machine*, with the fold doing the work.
 
-**2. Our tool was broken, not the machine.** Questions 13 and 14 both failed hard. The cause was the *marker* we were measuring with: a crude thing we had never certified. That exposed a real gap — the machine had no certified way to measure a two-outcome subsystem at all. So we built one, certified it on its own terms, and only then re-ran the questions. Both passed. A failed test is only as good as the instrument that produced it.
+So the state of play, plainly: **entanglement is the one big quantum behaviour this machine has not reproduced.** Not because Bell forbids it — Bell explicitly leaves this door open — but because we have not built the version that walks through it. It is the largest unfinished piece in the programme. It is designed and not made. And it may not work.
 
-**3. We ran quantum mechanics through our own marking scheme, and quantum mechanics failed too.** Question 14 came back 0.015 *over* the bound — which would have been a genuine departure from quantum mechanics, the biggest result on the paper. Before claiming it, we fed real quantum-mechanical data through the identical scoring code. It scored the same excess. Our scoring quantity was not the one the physics defines. We fixed the estimator, re-ran, and got 1.000004 — inside, as it should be. That is the closest we came to publishing something false.
-
-**4. We carried a setting where we should have re-fitted one.** Question 12 passed at home and missed on fresh frames. Cause: we reused the old recipe on the new frames instead of re-fitting it. And the size of the miss matched, almost exactly, a transfer penalty we had measured independently in the same battery. Re-fitted properly, it passed.
-
-**5. We wrote a bar that measured two things at once.** Question 17's original one-line pass mark mixed up two different dials: how strongly the apparatus couples, and how heavy it is. Visibility and path information move opposite ways on the first dial and the same way on the second, so one bar could not score both. We caught it, split it into two, and — this is the part that matters — did it **before** the first counting run, and it came out harder. Written down, dated, on the record.
-
-Every one of these is on the record with a number attached — four as numbered entries in the honesty ledger, the fifth as a dated, versioned change to the exam itself. Not the tidy version of the story: the actual one.
+That is why the row says unfinished rather than failed. We would rather print that than round it either way.
 
 ## The Confession
 
-Every episode gets one. Here it is.
+Every episode gets one. This one is short.
 
-**We wrote the exam.** Twenty questions I chose, with pass marks I set. Nobody handed us this paper. The best I can say is that the rules above are real — frozen first, harder-only, controls that must fail, re-run on a second world — and that the file is public with its changelog intact, so you can check whether a bar ever moved the convenient way. It never did. But it is our exam, and you should weigh it as such.
+**We wrote the exam.** Twenty questions we chose, with pass marks we set. Nobody handed us this paper. The rules above are real and you can check them — the file has a changelog, and no bar ever moved the convenient way — but it is still our exam, and you should weigh it as such.
 
-**The questions are not independent.** Several of them lean on the same one move. When the fold works, a whole block of rows passes together. So "eighteen out of twenty" is not eighteen separate pieces of evidence. It is closer to a handful of mechanisms, each visible from several angles.
+**The questions are not independent.** Several lean on the same single move. So "eighteen out of twenty" is not eighteen separate pieces of evidence. It is closer to a handful of mechanisms, each seen from several angles.
 
-**Twenty questions is not quantum mechanics.** There is no spin, no identical particles, no field theory, no gravity. This is one small machine with three outcomes and two observers on its best day. The exam only says: within these twenty behaviours, at about one percent, it did what a quantum system does.
+**Twenty questions is not quantum mechanics.** There is no spin here, no identical particles, no fields, no gravity. And there is no *space* either: the interference in these tests happens between two components of a three-number state, with a swept phase standing in for position on the screen. The one row that does need real distance runs in a separate, simpler world built for it. The setup notes in the repository say all of this plainly, test by test, because it is the kind of thing that is easy to gloss over and shouldn't be.
 
-**And there is the one percent itself.** Every "pass" on this paper is a pass at that precision. Question 6 is where that one percent stops being a tolerance and becomes a wall: the place the machine cannot follow quantum mechanics no matter how hard we push. Same number, twice. Once as the error bar, once as the limit.
+**And every pass is a pass at about one percent** — the machine's own precision. Question 6 is where that one percent stops being a tolerance and becomes a wall.
 
-What I will stand behind is narrow and, I think, still worth something: **a fully deterministic machine, with a physical measurement and no formula inside it, reproduced eighteen quantum behaviours at one percent — and where it broke, it broke in a way you can go and measure.**
+What we will stand behind is narrow, and we think still worth something: **a fully deterministic machine, with a physical measurement and no quantum formula inside it, reproduced eighteen quantum behaviours at one percent — and where it broke, it broke in a way you can go and measure.**
 
 ## What this does NOT claim
 
-> This is a **demonstration**, not a discovery about nature. The scorecard says one family of machines, at one frozen setting, reproduced twenty specific behaviours — it does not say our universe is a clockwork, does not reinterpret quantum mechanics, and does not dodge Bell's theorem, since the hidden machinery here is *global*, not local. Question 16 is unfinished, not won: the certified pair sits exactly on the classical bound. Question 6 is a confessed failure, and the cliff-or-floor dichotomy is a named conjecture, measured on both sides and proved on neither. Every number here is at the machine's own precision, about one percent, and every pass means "within that".
+> This is a **demonstration**, not a discovery about nature. The scorecard says one family of machines, at one frozen setting, reproduced twenty specific behaviours — it does not say our universe is a clockwork, does not reinterpret quantum mechanics, and does not dodge Bell's theorem, since the hidden machinery here is *global*, not local. Question 16 is unfinished, not won: the certified pair sits exactly on the classical bound, and entanglement remains unreproduced. Question 6 is a confessed failure, and the cliff-or-floor dichotomy is a named conjecture, measured on both sides and proved on neither. Every number behind this piece is at the machine's own precision, about one percent, and every pass means "within that".
 
-## The neighbors
+## The neighbors and the credits
 
-Test-driven design for physics models is not something I invented — it is just software practice pointed at a different target, and the honest note from episode one still holds: the reading and cross-checking was done mostly by AI, with me steering. The individual questions come from the people who first thought to ask them: John Wheeler's [delayed-choice experiment](https://en.wikipedia.org/wiki/Wheeler%27s_delayed-choice_experiment) is question 11, Marlan Scully and Kai Drühl's [quantum eraser](https://en.wikipedia.org/wiki/Quantum_eraser_experiment) is question 13, Berthold-Georg Englert's [visibility-distinguishability relation](https://doi.org/10.1103/PhysRevLett.77.2154) is the exact form of question 14, Elitzur and Vaidman's [interaction-free measurement](https://arxiv.org/abs/hep-th/9305002) is question 12, and Sabine Hossenfelder's slit-recoil argument shaped question 17. Question 3 exists because of [Gleason's theorem](https://plato.stanford.edu/entries/qt-gleason/), and question 19 is a Leggett-Garg wall — the tool [Leggett and Garg](https://doi.org/10.1103/PhysRevLett.54.857) built to ask whether a system has definite values when nobody looks. The exam is theirs. Only the machine sitting it is ours.
+Test-driven design for physics models is not something we invented — it is software practice pointed at a different target. And the exam itself belongs to the people who thought of the questions. The honest note from episode one still holds: the reading and cross-checking was done mostly by AI, with a human steering.
+
+- **[John Bell](https://cds.cern.ch/record/111654)** (1964) — the theorem behind question 16, and the reason this project targets *global* hidden variables and says so in every episode. **[John Clauser, Michael Horne, Abner Shimony and Richard Holt](https://doi.org/10.1103/PhysRevLett.23.880)** turned it into the testable CHSH form we actually ran.
+- **[John Archibald Wheeler](https://en.wikipedia.org/wiki/Wheeler%27s_delayed-choice_experiment)** — the delayed-choice experiment, question 11.
+- **[Marlan Scully and Kai Drühl](https://en.wikipedia.org/wiki/Quantum_eraser_experiment)** (1982) — the quantum eraser, question 13.
+- **[Berthold-Georg Englert](https://doi.org/10.1103/PhysRevLett.77.2154)** (1996) — the exact visibility-distinguishability relation, question 14.
+- **[Avshalom Elitzur and Lev Vaidman](https://arxiv.org/abs/hep-th/9305002)** (1993) — interaction-free measurement, question 12.
+- **[Sabine Hossenfelder](https://www.youtube.com/watch?v=npc6Mn2CZV8)** — her explanation of what the slits themselves are doing is what turned question 17 into a test we could actually run. If you watch one thing linked here, watch that.
+- **[Andrew Gleason](https://plato.stanford.edu/entries/qt-gleason/)** (1957) — the theorem that makes question 3 load-bearing rather than decorative.
+- **[Anthony Leggett and Anupam Garg](https://doi.org/10.1103/PhysRevLett.54.857)** (1985) — the tool for asking whether a system has definite values when nobody is looking; question 19 is a wall built out of it.
+
+And the closest neighbours in spirit, as ever: Gerard 't Hooft's [Cellular Automaton Interpretation](https://arxiv.org/abs/1405.1548), [Bohmian mechanics](https://plato.stanford.edu/entries/qm-bohm/), and Jacob Barandes' [indivisible stochastic processes](https://arxiv.org/abs/2402.16935).
 
 ## Run it yourself
 
-Every row on the scorecard, with the protocol, the frozen pass mark, the measured numbers and the control that had to fail, is written up one file per question: **[github.com/masteris777/quest-for-entropy-quantum-exam](https://github.com/masteris777/quest-for-entropy-quantum-exam)** — twenty deep dives, `test01.md` through `test20.md`, plus the raw measurement files the lab wrote and a checker that re-reads every number quoted in this post and fails loudly if one has drifted. Run `python verify_scorecard.py`. The machine itself is in the [previous episode's repository](https://github.com/masteris777/quest-for-entropy-the-machine), where `python run_all.py` rebuilds it from scratch in two seconds. And you can still poke it in the browser: **[run the machine](https://quest-for-entropy.web.app/the-machine)**, or **[watch the fold kill the stripes](https://quest-for-entropy.web.app/stripes-die)** — that one is question 8, live. Archived, citable snapshot: DOI to-be-minted-at-publication (Zenodo).
+Every row on the scorecard has its own file: **[github.com/masteris777/quest-for-entropy-quantum-exam](https://github.com/masteris777/quest-for-entropy-quantum-exam)** — twenty deep dives, `test01.md` through `test20.md`. Each one states **exactly how that test is set up in the toy** — what the "two slits" actually are, where the "speed of light" comes from, what the detector and the apparatus mass are made of — then the pass mark as it was frozen, the protocol, the controls that had to fail, the measured numbers, and the caveats. There is a **[setup guide](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/setup.md)** covering the apparatus in one place, and a **[ledger](https://github.com/masteris777/quest-for-entropy-quantum-exam/blob/main/ledger.md)** of the five times during this exam the machine looked wrong and *we* were wrong — including the one where we nearly published a violation of quantum mechanics that turned out to be our own broken scoring code.
+
+The laboratories' own measurement files ship with it, unedited, and `python verify_scorecard.py` re-reads every number this article rests on and fails loudly if one has drifted. The machine itself rebuilds from scratch in two seconds in the [previous episode's repository](https://github.com/masteris777/quest-for-entropy-the-machine). And you can still poke it in the browser: **[run the machine](https://quest-for-entropy.web.app/the-machine)**, or **[watch the fold kill the stripes](https://quest-for-entropy.web.app/stripes-die)** — that one is question 8, live. Archived, citable snapshot: DOI to-be-minted-at-publication (Zenodo).
 
 ## How this was made
 
-I'm a software architect. The physics and the deep math are what I'm curious about, not my job, and I use AI to explore them. The honest split: the heavy lifting — the math, the physics checks, the code, the sums — is AI, with me setting the direction, asking the questions, and making the calls. Main models: Anthropic Fable 5 and Sonnet 5, with help from OpenAI GPT 5.6 Sol, DeepSeek v4 Pro, and Google Gemini 3.1. To keep us honest, the work runs through a harness I built: every experiment follows rules fixed in advance, results get challenged by independent AI review, and every mistake we catch — including the five in this post — goes into a public honesty ledger. Every number here comes from code you can run, not from a model's memory.
+I'm a software architect. The physics and the deep math are what I'm curious about, not my job, and I use AI to explore them. The honest split: the heavy lifting — the math, the physics checks, the code, the sums — is AI, with me setting the direction, asking the questions, and making the calls. Main models: Anthropic Fable 5, Opus 5 and Sonnet 5, with support from DeepSeek v4 Pro. To keep us honest, the work runs through a harness I built: every experiment follows rules fixed in advance, results get challenged by independent AI review, and every mistake we catch goes into a public honesty ledger — the five from this exam are in the repository, with numbers. Every number here comes from code you can run, not from a model's memory.
 
 ## Next time
 

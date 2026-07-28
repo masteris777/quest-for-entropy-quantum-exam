@@ -10,6 +10,12 @@ Can the dark bands of the interference pattern be made arbitrarily dark, the way
 
 This is the one place the family is forbidden something quantum mechanics permits. Quantum interference can cancel exactly: push the setup toward a perfect null and the counted darkness goes to zero, with no floor. If a construction has a floor, it is distinguishable from quantum mechanics by measurement, not by argument.
 
+## How this is set up in the toy
+
+Same two-path setup as test 05, driven toward ever-deeper dark points. The 'target null depth' eps^2 is how dark quantum mechanics says the dark channel should be at that setting; the counted dark fraction is what the machine actually produces. Two different fold architectures are run down the same ladder: the certified richness fold (the incumbent) and a certified hierarchical / dominance fold. The gauge probe averages the whole system over a 24-element Clifford design with exact diagonal-coset structure — a coordinate change, not a new machine.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Build a ladder of ever-deeper target nulls (eps^2 from 0.1 down to 1e-4), count events landing in the dark channel at each rung with N up to 500,000, and compare the counted dark fraction against the Born prediction (which is eps^2 itself). Run the ladder for two different fold architectures: the certified richness fold (the incumbent) and a certified hierarchical / dominance fold.

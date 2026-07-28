@@ -1,0 +1,90 @@
+{
+  "lab": 78,
+  "stream": "cryptographic-substrate",
+  "stages": {
+    "A": {
+      "S_m1": 2.829344,
+      "S_m2": 2.827676,
+      "correlation_rms_m1": 0.000847,
+      "correlation_rms_m2": 0.000668,
+      "pass": true
+    },
+    "B": {
+      "leak_m1_equilibrium": 0.001812,
+      "leak_m2_equilibrium": 0.000545,
+      "leak_m1_sides": {
+        "alice": 0.000566,
+        "bob": 0.001812
+      },
+      "leak_m2_sides": {
+        "alice": 0.000464,
+        "bob": 0.000545
+      },
+      "pass": true
+    },
+    "C": {
+      "leak_by_kappa": {
+        "0.0": 0.001431,
+        "0.25": 0.001202,
+        "0.5": 0.000665,
+        "1.0": 0.00068,
+        "2.0": 0.001649,
+        "4.0": 0.001323
+      },
+      "leak_sides_by_kappa": {
+        "0.0": {
+          "alice": 0.001068,
+          "bob": 0.001431
+        },
+        "0.25": {
+          "alice": 0.000552,
+          "bob": 0.001202
+        },
+        "0.5": {
+          "alice": 0.00054,
+          "bob": 0.000665
+        },
+        "1.0": {
+          "alice": 0.000393,
+          "bob": 0.00068
+        },
+        "2.0": {
+          "alice": 0.001649,
+          "bob": 0.001326
+        },
+        "4.0": {
+          "alice": 0.00075,
+          "bob": 0.001323
+        }
+      },
+      "lambda1_mean_resultant_by_kappa": {
+        "0.0": 0.00037,
+        "0.25": 0.0829,
+        "0.5": 0.16338,
+        "1.0": 0.3132,
+        "2.0": 0.53743,
+        "4.0": 0.75053
+      },
+      "monotone": true,
+      "detectable_at_max_kappa": false,
+      "pass": false
+    },
+    "D": {
+      "substrate_bits_m1": "both settings co-located",
+      "substrate_bits_m2": 1,
+      "no_other_channel_assertion": true,
+      "pass": true
+    }
+  },
+  "trials_per_cell": 1000000,
+  "grid_trials_per_cell": 1000000,
+  "runtime_seconds": 20.4,
+  "verdict": "PARTIAL",
+  "verdict_reason": "Stages A and B passed (S = 2.829344/2.827676, equilibrium leaks 0.001812/0.000545); Stage C failed: leak(0) = 0.001431, leak(4.0) = 0.001323 (detectable: False, monotone: True).",
+  "leakage_audit": {
+    "wrote_outside_lab_folder": false,
+    "posthoc_threshold_change": false,
+    "harness_reimplemented": false,
+    "per_setting_tuning": false
+  }
+}

@@ -10,6 +10,12 @@ When the apparatus takes a kick from the particle, does a LIGHT apparatus record
 
 Sabine Hossenfelder's framing of the double slit: the wall the slits are cut in recoils, and that recoil is where which-path information physically lives. It makes complementarity mechanical rather than mystical — and it needs TWO dials, not one.
 
+## How this is set up in the toy
+
+The setup of test 08 plus a second dial. **The 'apparatus' is the marker, and its 'mass' is its mixedness.** Per run the marker starts in `(cos(u/2), sin(u/2)*e^(i*chi))` with `u = m*pi*v`, where v and chi are drawn from the pool and m is the dial: m = 0 is a pure pointer (light apparatus), m = 1 is a maximally mixed ensemble (heavy apparatus). The kick is a fixed rotation R(pi/2) on the marker conditioned on the path component. **Honest scope, declared in the lab's own contract before it ran:** the exchange ledger (+delta to the apparatus, -delta to the particle, summing to zero every run) is conservation **by construction** — a bookkeeping identity standing in for momentum exchange, not a conservation law derived from the dynamics. The physical content of this row is the two dials, not the ledger. True momentum is out of scope.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Two independent dials. Coupling dial: strength of the kick (CH-14's dial — V falls as D rises). Mass dial m: apparatus mixedness, from a light pointer to a heavy one. At each m measure V from counted events and D operationally, and check the per-run exchange ledger for exact conservation.

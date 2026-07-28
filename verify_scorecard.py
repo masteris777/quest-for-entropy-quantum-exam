@@ -1,13 +1,15 @@
-"""Re-check every number Quest for Entropy #3 quotes, against the frozen lab metrics.
+"""Re-check every number Quest for Entropy #3 rests on, against the frozen lab metrics.
 
     python verify_scorecard.py
 
 Reads only the JSON files in metrics/ - the laboratory's own output, shipped unmodified -
 recomputes the headline quantities from raw counts wherever raw counts exist, and compares
-each one against the value printed in the article. Exits non-zero if any check fails.
+each one against the value the article and its deep dives report. Exits non-zero if any check
+fails. The article itself states results in words rather than digits, on purpose; the digits
+live in tests/ and are held to the evidence here.
 
-What this DOES verify: that the article's numbers are the lab's numbers, that the derived
-ones follow from the raw counts, and that no quoted figure has drifted.
+What this DOES verify: that the reported numbers are the labs' numbers, that the derived ones
+follow from the raw counts, and that nothing has drifted.
 
 What this does NOT do: re-run the experiments. The labs behind these rows take from seconds
 to many minutes each and pull in the full research tree. This pack certifies the SCORECARD
@@ -216,6 +218,20 @@ def main():  # noqa: C901 - a flat list of checks reads better than nesting
     check("CH-16  all inside their bars", all(t <= b for t, b in zip(tvs, bars)), True)
     check("CH-16  settings never derived from world state",
           d150["leakage_audit"]["settings_derived_from_world_state"], False)
+    d77, d78 = load("77"), load("78")
+    check("CH-16  calibration: a local deterministic strategy tops out at",
+          d77["stages"]["A"]["deterministic_S"], 2.0)
+    check("CH-16  calibration: the quantum singlet reaches",
+          round(d77["stages"]["A"]["quantum_singlet_S"], 2), 2.83, 0.005)
+    check("CH-16  local pseudorandomness families tested", len(d77["stages"]["B"]["best_S_by_family"]), 5)
+    check("CH-16  ... none of them passes 2.01",
+          max(d77["stages"]["B"]["best_S_by_family"].values()) < 2.01, True,
+          note="SHA-256 is no better at this than a toy generator")
+    check("CH-16  a shared global node reaches", round(d78["stages"]["A"]["S_m2"], 2), 2.83, 0.005)
+    check("CH-16  ... on this many shared bits per trial", str(d78["stages"]["D"]["substrate_bits_m2"]), "1")
+    check("CH-16  ... without becoming detectable by signalling",
+          max(d78["stages"]["B"]["leak_m2_sides"].values()) < 0.002, True,
+          note="the resource that would close CH-16 is known and cheap - it is just not built into the fold")
 
     check("CH-17  path information at maximal apparatus mass",
           round(d149b["stages"]["B_op"]["D_op_by_m"]["1.0"], 4), 0.0001, 5e-5)
@@ -273,7 +289,7 @@ def main():  # noqa: C901 - a flat list of checks reads better than nesting
     if fails:
         print(f"  {fails} of {checks} CHECKS FAILED - a quoted number has drifted from its evidence.")
     else:
-        print(f"  ALL {checks} CHECKS PASS - every number in the article matches the frozen lab metrics.")
+        print(f"  ALL {checks} CHECKS PASS - every reported number matches the frozen lab metrics.")
     print("-" * 100)
     print("  Scope: this verifies the scorecard against frozen evidence; it does not re-run the")
     print("  experiments. The machine itself runs from scratch in the episode 2 pack.")

@@ -10,6 +10,12 @@ After a measurement the answer is sharp. If the observer waits without measuring
 
 A construction can freeze a value and look repeatable. The test that separates freezing from evolving is what happens when you WAIT. The revival is the part that cannot be faked by damping: the certainty comes partly back.
 
+## How this is set up in the toy
+
+Same arena as test 01, with waiting added. 'Waiting' means evolving under the turn operator U_S alone for Delta ticks with **no fold at all**, then folding. The reference curve r_free(Delta) is what a freely evolving measured state predicts. The control is a Zeno chain: instead of waiting, keep folding repeatedly, which freezes the value. Two coprime schedule offsets (7 and 11) rule out sampling artifacts from the pool's sixteen-group rotation.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Fold, then evolve the state under the substrate turn alone for Delta ticks without folding, then fold again and record whether the outcome matches. Sweep Delta. Compare against r_free(Delta), the analytic curve for the freely evolved state. Re-run under two coprime schedule offsets (7 and 11) to rule out sampling artifacts.

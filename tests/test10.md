@@ -10,6 +10,12 @@ Between two consecutive measurements, does the full table of transition frequenc
 
 Repeatability is a single number and a lucky construction could hit it. The transition table is nine numbers at once, and it is what the collapse postulate plus unitary evolution actually predicts. This is the strongest measurement-dynamics row on the paper.
 
+## How this is set up in the toy
+
+Same arena as test 01. Fold, let exactly one tick pass, fold again. The counted quantity is the full 3x3 table M(k|j) — the frequency of recording k given j one step earlier — including the off-diagonal entries where the answer changes. The quantum reference is the corresponding transition table for a measured state evolving one tick. Lags of 3 and 10 ticks are also run, to check the table composes the way a chain should.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Fold, let the substrate take one turn, fold again. Count M(k|j), the frequency of recording k given that j was recorded one step earlier, for all nine (j,k) pairs. Compare entry by entry against the quantum chain. Repeat at lag 3 and lag 10 to check that the chain composes.

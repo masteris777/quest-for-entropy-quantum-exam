@@ -10,6 +10,12 @@ Can measuring one system change what a distant system sees, before a signal trav
 
 Any global hidden-variable construction is under immediate suspicion of allowing faster-than-light signalling. If it does, it is dead — not because of Bell, but because of relativity. This row is the survival check.
 
+## How this is set up in the toy
+
+**A different arena, and this row is the reason the toy needs one.** Model Two has no space, so it cannot express 'distant' or 'faster than light'. This test therefore runs in the block arena: a second-order **Rule 30** cellular automaton on a line of 150 cells, 3,200 ticks, with 16 hidden imports entering at alternating edges. Each cell updates from its immediate neighbours only, so **influence spreads exactly one cell per tick — that is the speed of light in this world, and it is a property of the update rule, not a parameter anyone set.** Two observers are columns of that line, at cell 6 and cell 17. The intervention flips one hidden import on the near observer's side; the far observer's cone-crossing tick is then `intervention tick + distance`, computed from the recorded attachment before any comparison is made.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Intervene on the substrate at a known position and tick. Compare the far observer's record bit by bit against the unintervened run. Compute the light-cone arrival tick for each observer from its distance. Check that the far record is identical before its cone tick, and that the NEAR observer (inside the cone) does diverge — the positive control, which proves the intervention was real.

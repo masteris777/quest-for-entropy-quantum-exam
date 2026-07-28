@@ -10,6 +10,12 @@ Measure, then measure again immediately. Does the second measurement always retu
 
 This is the projection postulate — in textbook quantum mechanics it is an AXIOM, written in by hand. Here nothing of the sort is written anywhere. If repeatability appears, it appears as a consequence of the rewrite leaning toward what was just recorded.
 
+## How this is set up in the toy
+
+Same arena as test 01. 'Immediately' is exact and matters: the second measurement happens **before the substrate takes its next turn** — no ticks pass in between. What is compared is the two recorded integers. Note what is not frozen: the second measurement still draws six fresh pool numbers and writes a brand-new state. The answer repeats; the state behind it does not.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 At each fold, immediately re-fold before the substrate takes its next turn, and compare the two recorded integers. Count matches over the whole run, in three cells spanning two substrate worlds.

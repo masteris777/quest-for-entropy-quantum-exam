@@ -10,6 +10,12 @@ When phase noise is added, does interference fade along the specific curve quant
 
 Anything noisy loses coherence. The test is the LAW: visibility must track a particular analytic dephasing curve as the noise width is turned up. Direction is cheap; the curve is not.
 
+## How this is set up in the toy
+
+Same two-path setup as test 05, plus noise. Each draw gets its own random phase offset delta drawn uniformly from [-Delta, +Delta], with Delta the dial. Averaging a cosine over that window multiplies its amplitude by sinc(Delta) = sin(Delta)/Delta — that is the analytic curve the counted visibility has to follow. The reference values were written into the script header before counting.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Introduce phase dispersion of width Delta into the two-path preparation, sweep Delta, fit visibility from counted events at each width, and compare against the analytic dephasing curve at two frames.

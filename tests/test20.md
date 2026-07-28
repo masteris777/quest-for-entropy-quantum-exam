@@ -10,6 +10,12 @@ Can ANY deterministic world, watched passively through a fixed set of questions,
 
 This is the wall that killed the programme's earlier direction and the reason the fold exists at all. If passive watching could do it, no back-action would be needed and the whole machine would be over-engineered. It cannot, and that is proved, not measured.
 
+## How this is set up in the toy
+
+Not an experiment — a proof. The object is any deterministic flow observed through a fixed finite partition, with nothing written back. The Leggett-Garg quantity K3 is built from three-time correlations. The classical bound is established by exhaustive pointwise enumeration over the eight sign patterns plus a symbolic linearity identity; the quantum value is derived symbolically. The corroborating measurement (a passively watched world scoring just under the bound) came from a separate, earlier experiment in Model Two's lineage.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Not an experiment. T1: any deterministic flow observed passively through a fixed finite partition admits a joint distribution over all finite outcome histories, hence satisfies every Leggett-Garg bound (K3 <= 1) — checked by pointwise 8-case enumeration plus a symbolic linearity identity. T2: quantum collapse violates it exactly, K3 = 3/2 at theta = pi/3, symbolic. T3: therefore no passive observation of any deterministic world reproduces collapse statistics; the missing ingredient is necessarily non-passive.

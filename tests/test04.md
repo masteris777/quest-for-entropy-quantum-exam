@@ -10,6 +10,12 @@ Does a coin-flip mixture of two setups give the plain average of their statistic
 
 This is the difference between 'don't know which' and 'both at once'. A classical machine can fake the first easily. Getting the second one right, at the size the theory pins down, is the harder half.
 
+## How this is set up in the toy
+
+Same arena as test 01. Two component ensembles A and B are built by the certified builder. The **mixture** is made by an independent selector channel choosing A or B per run with probability p — a coin flip the machine cannot see. The **superposition** is made by building the coherent combination as the target state instead. The difference between the two is exactly the difference between 'don't know which' and 'both at once'.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Prepare two component ensembles A and B. Stage B2: blend them with probability p using an independent selector channel, count, and compare against p*F_A + (1-p)*F_B. Stage B3: prepare the coherent combination instead and measure the departure from the mixture prediction.

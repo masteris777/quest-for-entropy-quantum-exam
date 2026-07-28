@@ -10,6 +10,12 @@ If a detector is present on one path but never fires, do the fringes still die?
 
 Elitzur and Vaidman's bomb tester. This is the strangest row on the paper: information gained by NOT seeing something still costs the interference. A construction where 'nothing happened' means 'nothing changed' fails here immediately.
 
+## How this is set up in the toy
+
+The setup of test 08, with the runs sorted afterwards. The detector is present and coupled, but only the runs where its fold did **not** register are kept, and the fringes are fitted on that subensemble alone. Nothing physically touched the kept runs. A separate probe watches the reservoir directly for any leakage signal.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Place the which-path fold on one arm. Keep only the runs in which it did not register. Sweep the interference phase on that null-conditioned subensemble and fit visibility. Also compare the null-conditioned screen profile against the single-path profile it should now match.

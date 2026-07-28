@@ -10,6 +10,12 @@ Does the answer to one question stay the same when it is asked alongside differe
 
 This is the hinge Gleason's theorem turns on. If a direction's probability is allowed to depend on which complete set it is measured in, the theorem has nothing to bite on and the squared law is not forced. Non-contextuality is what makes the geometry rigid.
 
+## How this is set up in the toy
+
+Same arena as test 01. A 'context' is a complete measurement — a full orthonormal triple. The same direction is embedded in many different triples by rotating the other two around it. Nothing about the machine changes between contexts; only the two companion questions do.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Fix a direction. Embed it in many different complete measurement contexts (rotations of the complementary pair). Count the frequency of that direction in each context. Report SPREAD = the range of counted values across contexts, per direction.

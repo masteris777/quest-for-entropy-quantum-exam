@@ -10,6 +10,12 @@ Does the fate of the interference pattern depend on WHETHER a which-path fold ha
 
 Wheeler's question. If the fringes depended on the timing of the choice, something in the construction would be reaching backwards along the trajectory — and a deterministic machine that needs retrocausality to imitate quantum mechanics has not explained anything.
 
+## How this is set up in the toy
+
+The two-path setup of test 05 plus the marker of test 08, with a flight time. The state is given a flight of 64 ticks between preparation and readout, and the which-path fold is inserted at t_d = 0, 16, 32, 48 or 63 ticks into that flight — from before it begins to the last tick before it ends. Everything else is held identical. The only thing that varies is WHEN the marking happens.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Fix a flight time of 64 ticks. Insert the which-path fold at t_d = 0, 16, 32, 48 and 63 — from before the flight begins to the last tick before it ends. Sweep the interference phase at each insertion time and fit visibility.

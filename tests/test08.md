@@ -10,6 +10,12 @@ If the path is marked, does interference vanish completely — leaving the plain
 
 This is the observer effect in its most testable form, and it is the row the browser demo shows live. Partial marking must partially kill the fringes; full marking must kill them entirely.
 
+## How this is set up in the toy
+
+Same two-path setup as test 05, plus a detector. **The 'which-path detector' is a two-level marker system** carried alongside the state. Marking is a controlled rotation R(g) applied to the marker, conditioned on the path component of the state — g is the coupling dial, and g = pi/2 is total marking. The marker is then measured by its own certified two-outcome fold (the same fold machinery, built and certified for dimension 2 in its own lab, because the three-outcome one does not apply). Visibility V is fitted from the counted fringes; distinguishability D is how well the marker's record identifies the path.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Couple a marker to the path degree of freedom with strength g, run the interference sweep, and measure both the fringe visibility V and the path distinguishability D at each g. At g = pi/2 the marking is total.

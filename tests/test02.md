@@ -10,6 +10,12 @@ Does it still work if the observer asks its questions in a different direction â
 
 A single lucky frame would be worthless. Quantum statistics hold in every basis; a construction that only works in one is a coincidence with good marketing.
 
+## How this is set up in the toy
+
+Same arena as test 01. 'A fresh frame' means a new orthonormal triple of observer directions, drawn independently of anything measured. 'A fresh world' (W2) means a different turn operator U_S and a different initial state â€” a genuinely separate substrate, not a reseeding of the first one.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Repeat CH-01 with freshly drawn observer frames, then repeat again on a second, independently built substrate world (W2) with its own turn operator and its own initial state. Bars copied over unchanged.

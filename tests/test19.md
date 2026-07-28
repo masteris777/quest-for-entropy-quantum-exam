@@ -10,6 +10,12 @@ Given a real, information-preserving view of a steadily turning world with no st
 
 Every physics student asks why quantum mechanics needs imaginary numbers. This is a partial answer for this class of observer: it is not a modelling choice.
 
+## How this is set up in the toy
+
+Not an experiment — a proof, so there is no arena. The object is an abstract one: a real orthogonal operator on an even-dimensional real space with no real eigenvalues, standing for an information-preserving view of a steadily turning world. Everything is symbolic and exact; no floating point is used anywhere in the proof stage. **This object is not Model Two's state**, which is written complex by hand in the source code.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Not an experiment. Six exact symbolic lemmas, machine-checked, no floating point in the proof stage: a real orthogonal operator on R^(2n) with no real eigenvalues decomposes into n mutually orthogonal invariant rotation planes; the blockwise quarter-turn J satisfies J^2 = -I and commutes with the operator; an odd-dimensional real eigenspace obstructs any such J by determinant parity.

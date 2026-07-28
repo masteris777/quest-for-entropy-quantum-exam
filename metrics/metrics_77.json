@@ -1,0 +1,82 @@
+{
+  "lab": 77,
+  "stream": "cryptographic-substrate",
+  "stages": {
+    "A": {
+      "deterministic_S": 2.0,
+      "quantum_singlet_S": 2.829422,
+      "pr_box_S": 4.0,
+      "quantum_E_by_pair": {
+        "00": -0.70832,
+        "01": 0.70729,
+        "10": -0.70684,
+        "11": -0.70697
+      },
+      "pass": true
+    },
+    "B": {
+      "best_S_by_family": {
+        "lcg": 2.00332,
+        "logistic_chaos": 2.003016,
+        "crypto_hash": 2.00262,
+        "os_crypto": 2.00233,
+        "shared_lambda_response": 2.000758
+      },
+      "strategy_detail": {
+        "lcg": {
+          "sign_threshold": 2.00332,
+          "modulated_deterministic": 2.0,
+          "shared_lambda_geometric": 1.99938
+        },
+        "logistic_chaos": {
+          "sign_threshold": 2.003016,
+          "modulated_deterministic": 2.0,
+          "shared_lambda_geometric": 1.99999
+        },
+        "crypto_hash": {
+          "sign_threshold": 2.00262,
+          "modulated_deterministic": 2.0,
+          "shared_lambda_geometric": 2.000442
+        },
+        "os_crypto": {
+          "sign_threshold": 2.00233,
+          "modulated_deterministic": 2.0,
+          "shared_lambda_geometric": 2.00087
+        },
+        "shared_lambda_response": {
+          "shared_lambda_geometric": 2.000758
+        }
+      },
+      "max_minus_min_across_prng_families": 0.00099,
+      "all_below_ceiling": true,
+      "os_crypto_seed_used": "208158976403825485373882190243398537877",
+      "pass": true
+    },
+    "C": {
+      "S_by_p": {
+        "0.0": 2.0,
+        "0.05": 2.100732,
+        "0.1": 2.198864,
+        "0.2": 2.401384,
+        "0.3": 2.600432,
+        "0.5": 3.000944,
+        "0.7": 3.400652,
+        "1.0": 4.0
+      },
+      "p_star_for_quantum_value": 0.413852,
+      "monotone": true,
+      "endpoints_ok": true,
+      "pass": true
+    }
+  },
+  "trials_per_cell": 1000000,
+  "runtime_seconds": 8.7,
+  "verdict": "PASS",
+  "verdict_reason": "All stages passed: calibration hit all three references (det 2.0, quantum 2.829422, PR 4.0); all five local families capped at 2.0033 <= 2.01 with PRNG spread 0.0010; S(p) monotone with p* = 0.413852.",
+  "leakage_audit": {
+    "wrote_outside_lab_folder": false,
+    "posthoc_threshold_change": false,
+    "remote_setting_read_outside_stage_c": false,
+    "posthoc_strategy_addition": false
+  }
+}

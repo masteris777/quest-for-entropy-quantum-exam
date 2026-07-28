@@ -10,6 +10,12 @@ Mark the path so the fringes die, then erase the marker and sort the records by 
 
 The eraser is the experiment people reach for when they want to claim retrocausality. It is nothing of the sort, and a mechanism that reproduces it makes that visible: nothing is un-measured, the records are just reorganised.
 
+## How this is set up in the toy
+
+The setup of test 08, plus erasure. After the marker has been coupled at full strength, an erasing rotation is applied and the marker is folded **in the conjugate basis** — which destroys the which-path information and produces a fresh binary label that is correlated with the phase rather than the path. Runs are then sorted into two piles by that label and the fringes are fitted in each pile separately, and in the two pooled together.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Couple the marker at full strength, then apply the erasing rotation and fold the marker in the conjugate basis. Split the runs by erased-marker outcome. Sweep the interference phase and fit visibility separately in each subensemble, then in the pooled data.

@@ -10,6 +10,12 @@ Can path knowledge and fringe visibility both be high? Quantum mechanics says no
 
 Englert's relation is a bound, not a fit — and the interesting thing is not obeying it but SATURATING it. A sloppy construction sits safely underneath; quantum mechanics rides the edge. This row is also where this campaign came closest to publishing something false.
 
+## How this is set up in the toy
+
+The setup of test 08 with the coupling g swept from 0 to pi/2. The subtle part is how D is measured, and it is the whole story of this row. **D is Englert's *operational* distinguishability**: build two single-branch calibration ensembles (path A only, path B only), push each through the identical coupling and the identical marker fold, and measure how differently the marker responds. It is not read off from knowing which path was 'really' taken — that quantity is not the one the physics defines, and using it is exactly the mistake this lab made first.
+
+*(One-page overview of the apparatus, and what is deliberately not modelled: [`../setup.md`](../setup.md).)*
+
 ## Protocol
 
 Sweep the marker coupling g from 0 to pi/2. At each g measure fringe visibility V from counted events, and measure D as Englert's OPERATIONAL distinguishability: the difference in flip probability between single-branch calibration ensembles pushed through the identical coupling and marker fold. Compute V^2 + D^2 at each g.

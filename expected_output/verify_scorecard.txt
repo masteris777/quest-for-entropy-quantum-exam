@@ -82,6 +82,13 @@ re-checking every number the article quotes against metrics/
   [ok  ] CH-16  against a bar of                                        measured 0.019  article 0.019  (tol 0.0005)
   [ok  ] CH-16  all inside their bars                                   measured True  article True
   [ok  ] CH-16  settings never derived from world state                 measured False  article False
+  [ok  ] CH-16  calibration: a local deterministic strategy tops out at measured 2  article 2  (tol 0)
+  [ok  ] CH-16  calibration: the quantum singlet reaches                measured 2.83  article 2.83  (tol 0.005)
+  [ok  ] CH-16  local pseudorandomness families tested                  measured 5  article 5  (tol 0)
+  [ok  ] CH-16  ... none of them passes 2.01                            measured True  article True  [SHA-256 is no better at this than a toy generator]
+  [ok  ] CH-16  a shared global node reaches                            measured 2.83  article 2.83  (tol 0.005)
+  [ok  ] CH-16  ... on this many shared bits per trial                  measured '1'  article '1'
+  [ok  ] CH-16  ... without becoming detectable by signalling           measured True  article True  [the resource that would close CH-16 is known and cheap - it is just not built into the fold]
   [ok  ] CH-17  path information at maximal apparatus mass              measured 0.0001  article 0.0001  (tol 5e-05)
   [ok  ] CH-17  D falls monotonically with mass                         measured True  article True
   [ok  ] CH-17  V^2 + D^2 stays inside the Englert bound                measured True  article True
@@ -101,7 +108,7 @@ re-checking every number the article quotes against metrics/
   [ok  ] CH-19  verdict                                                 measured 'PASS'  article 'PASS'
 
 ----------------------------------------------------------------------------------------------------
-  ALL 82 CHECKS PASS - every number in the article matches the frozen lab metrics.
+  ALL 89 CHECKS PASS - every reported number matches the frozen lab metrics.
 ----------------------------------------------------------------------------------------------------
   Scope: this verifies the scorecard against frozen evidence; it does not re-run the
   experiments. The machine itself runs from scratch in the episode 2 pack.
