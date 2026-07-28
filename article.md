@@ -199,7 +199,8 @@ Test-driven design for physics models is not something we invented — it is sof
 - **[Marlan Scully and Kai Drühl](https://en.wikipedia.org/wiki/Quantum_eraser_experiment)** (1982) — the quantum eraser, question 13.
 - **[Berthold-Georg Englert](https://doi.org/10.1103/PhysRevLett.77.2154)** (1996) — the exact visibility-distinguishability relation, question 14.
 - **[Avshalom Elitzur and Lev Vaidman](https://arxiv.org/abs/hep-th/9305002)** (1993) — interaction-free measurement, question 12.
-- **[Sabine Hossenfelder](https://www.youtube.com/watch?v=npc6Mn2CZV8)** — her explanation of what the slits themselves are doing is what turned question 17 into a test we could actually run. If you watch one thing linked here, watch that.
+- **Sabine Hossenfelder** — her explanation of what the slits themselves are doing is what turned question 17 into a test we could actually run. If you watch one thing linked here, watch that:
+  https://www.youtube.com/watch?v=npc6Mn2CZV8
 - **[Andrew Gleason](https://plato.stanford.edu/entries/qt-gleason/)** (1957) — the theorem that makes question 3 load-bearing rather than decorative.
 - **[Anthony Leggett and Anupam Garg](https://doi.org/10.1103/PhysRevLett.54.857)** (1985) — the tool for asking whether a system has definite values when nobody is looking; question 19 is a wall built out of it.
 
