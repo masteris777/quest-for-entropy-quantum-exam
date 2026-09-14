@@ -1,6 +1,6 @@
 # The Quantum Exam — companion repository
 
-**Article:** [Quest for Entropy #3 — "The Machine Takes a Quantum Exam"](https://questforentropy.substack.com/p/the-machine-takes-a-quantum-exam)
+**Article:** [Quest for Entropy #3 — "The Machine Takes a Quantum Exam"](https://questforentropy.com/p/the-machine-takes-a-quantum-exam) · also on [Substack](https://questforentropy.substack.com/p/the-machine-takes-a-quantum-exam)
 
 **Series:** ← [#2 The Machine](https://github.com/masteris777/quest-for-entropy-the-machine) · [#4 I Never Understood Entropy](https://github.com/masteris777/quest-for-entropy-i-never-understood-entropy) →
 
